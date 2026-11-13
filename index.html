@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b0f19"><title>Produtividade · Assaí</title>
+<html lang="pt-BR" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b0f19"><title>Produtividade · Assaí</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230b0f19%27/%3E%3Cpath d=%27M12 42a20 20 0 1 1 40 0%27 fill=%27none%27 stroke=%27%2322d3ee%27 stroke-width=%276%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M32 37 44 22%27 stroke=%27%23f472b6%27 stroke-width=%275%27 stroke-linecap=%27round%27/%3E%3Ccircle cx=%2732%27 cy=%2738%27 r=%274%27 fill=%27%23e9edf7%27/%3E%3C/svg%3E">
 <style>
 :root{color-scheme:dark;--bg:#0b0f19;--bg2:#080b14;--panel:#121826;--panel2:#171e2e;--panel3:#0e1420;--line:rgba(226,232,255,.10);--line2:rgba(226,232,255,.06);--text:#e9edf7;--muted:#9aa6bf;--quiet:#6f7c96;--accent:#6366f1;--accent2:#8b5cf6;--cyan:#22d3ee;--green:#34d399;--red:#f87171;--amber:#fbbf24;--blue:#60a5fa;--pink:#f472b6;--chip:rgba(99,102,241,.14);--chip-line:rgba(99,102,241,.4);--shadow:0 18px 44px -30px rgba(0,0,0,.9);--track:rgba(255,255,255,.08);--radius:14px;font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif}
 html[data-theme="light"]{color-scheme:light;--bg:#f2f5fa;--bg2:#e9eef6;--panel:#ffffff;--panel2:#f7f9fc;--panel3:#eef2f8;--line:rgba(15,23,42,.12);--line2:rgba(15,23,42,.07);--text:#0f172a;--muted:#5b6b85;--quiet:#7c8aa3;--accent:#4f46e5;--accent2:#7c3aed;--cyan:#0891b2;--green:#059669;--red:#dc2626;--amber:#b45309;--blue:#2563eb;--pink:#db2777;--chip:rgba(79,70,229,.10);--chip-line:rgba(79,70,229,.32);--shadow:0 16px 40px -32px rgba(15,23,42,.45);--track:rgba(15,23,42,.10)}
@@ -382,11 +382,11 @@ td.nd{color:var(--quiet)}
 .prod-topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:9px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow);flex-wrap:wrap}
 .prod-hero{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:20px 2px 14px;flex-wrap:wrap}.prod-hero h1{margin:6px 0;font-size:clamp(22px,2.5vw,32px)}.prod-hero h1 span{background:linear-gradient(100deg,var(--cyan),var(--accent2),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}.prod-description{margin:0;color:var(--muted);font-size:12px;max-width:88ch}.prod-controls{display:flex;gap:9px;align-items:flex-end;flex-wrap:wrap}.prod-panel{border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:var(--shadow);padding:14px clamp(10px,1.3vw,18px) 16px}.prod-loading{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:rgba(2,3,12,.86);backdrop-filter:blur(4px)}.prod-loading[hidden]{display:none!important}.prod-loading .card{width:min(460px,90vw);text-align:center;padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:16px}.prod-foot{display:flex;justify-content:space-between;color:var(--quiet);font-size:9px;padding:12px 4px}.prod-table tfoot td{position:sticky;bottom:0;background:var(--panel);font-weight:900;color:var(--cyan);border-top:1px solid var(--line)}
 @media(max-width:750px){.prod-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.prod-table thead th:first-child,.prod-table tbody td:first-child{min-width:190px}}
-.prod-metrics{display:flex;justify-content:flex-end;align-items:flex-end;gap:10px;padding:5px 0 10px}.prod-grid-wrap.manager-wrap{max-height:72vh}.manager-table{width:max-content;min-width:100%}.manager-table td.manager-cell{font-weight:900;font-variant-numeric:tabular-nums;cursor:help}.manager-table td.manager-cell.below-target{color:var(--red);background:rgba(248,113,113,.13)}.manager-table td.manager-cell.hit-target{color:var(--green);background:rgba(52,211,153,.10)}.manager-table td.month-avg{font-weight:900;color:var(--cyan);background:var(--panel)}.manager-table .mgr-name{font-weight:800;text-align:left}.manager-table .mgr-name small{display:block;font-weight:500;color:var(--muted);font-size:9px}.team-modal-wrap{max-height:65vh;overflow:auto}.team-modal-table{width:100%;min-width:680px}.team-modal-table td,.team-modal-table th{padding:8px 10px}.team-modal-table td:nth-child(2){text-align:left;white-space:normal}.team-modal-table .team-qty{font-weight:900;color:var(--cyan);font-variant-numeric:tabular-nums}.team-modal-table .team-absent{color:var(--quiet)}.capacity-toolbar{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:4px 0 10px}.capacity-chart-card{grid-column:span 12}.capacity-chart-wrap{width:100%;overflow-x:auto}.capacity-chart-svg{display:block;width:100%;min-width:880px;height:auto;min-height:330px}.capacity-legend{display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding:8px 2px;color:var(--muted);font-size:11px}.capacity-legend span{display:inline-flex;align-items:center;gap:7px}.capacity-legend i{display:inline-block;width:12px;height:12px;border-radius:3px}.capacity-note{margin-top:8px;color:var(--muted);font-size:11px}.target-badge{display:inline-flex;padding:4px 9px;border-radius:999px;background:rgba(248,113,113,.12);border:1px solid rgba(248,113,113,.35);color:var(--red);font-size:10px;font-weight:800;letter-spacing:.6px}.prod-table tbody td.manager-cell:hover{outline:1px solid var(--chip-line)}#teamModal{z-index:120}.prod-app .tabs{gap:6px}.prod-app .tab{padding:8px 11px}
+.prod-metrics{display:flex;justify-content:flex-end;align-items:flex-end;gap:10px;padding:5px 0 10px}.prod-grid-wrap.manager-wrap{max-height:72vh}.manager-table{width:max-content;min-width:100%}.manager-table td.manager-cell{font-weight:900;font-variant-numeric:tabular-nums;cursor:help}.manager-table td.manager-cell.below-target{color:var(--red);background:rgba(248,113,113,.13)}.manager-table td.manager-cell.hit-target{color:var(--green);background:rgba(52,211,153,.10)}.manager-table td.month-avg{font-weight:900;color:var(--cyan);background:var(--panel)}.manager-table .mgr-name{font-weight:800;text-align:left}.manager-table .mgr-name small{display:block;font-weight:500;color:var(--muted);font-size:9px}.team-modal-wrap{max-height:65vh;overflow:auto}.team-modal-table{width:100%;min-width:680px}.team-modal-table td,.team-modal-table th{padding:8px 10px}.team-modal-table td:nth-child(2){text-align:left;white-space:normal}.team-modal-table .team-qty{font-weight:900;color:var(--cyan);font-variant-numeric:tabular-nums}.team-modal-table .team-absent{color:var(--quiet)}.capacity-toolbar{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:4px 0 10px}.capacity-chart-card{grid-column:span 12}.capacity-chart-wrap{width:100%;overflow-x:auto}.capacity-chart-svg{display:block;width:100%;min-width:880px;height:auto;min-height:330px}.capacity-legend{display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding:8px 2px;color:var(--muted);font-size:11px}.capacity-legend span{display:inline-flex;align-items:center;gap:7px}.capacity-legend i{display:inline-block;width:12px;height:12px;border-radius:3px}.capacity-note{margin-top:8px;color:var(--muted);font-size:11px}.target-badge{display:inline-flex;padding:4px 9px;border-radius:999px;background:rgba(248,113,113,.12);border:1px solid rgba(248,113,113,.35);color:var(--red);font-size:10px;font-weight:800;letter-spacing:.6px}.prod-table tbody td.manager-cell:hover{outline:1px solid var(--chip-line)}.prod-table tbody td.manager-cell{cursor:pointer}.team-modal-wrap{max-height:70vh}.team-modal-table{min-width:900px}.team-modal-table td:nth-child(2){text-align:left;white-space:normal}.team-modal-table td:nth-child(7){font-weight:900;color:var(--cyan);font-variant-numeric:tabular-nums}.people-search{min-width:min(360px,80vw)}#teamModal{z-index:120}.prod-app .tabs{gap:6px}.prod-app .tab{padding:8px 11px}
 @media(max-width:750px){.prod-metrics{justify-content:flex-start}.prod-app .tab{font-size:9px;padding:7px 9px}.team-modal-wrap{max-height:70vh}}
 </style></head><body><div class="bg"></div><main class="prod-app">
 <header class="prod-topbar"><div class="brand"><div class="mark">P</div><div><b><em>PRODUTIVIDADE</em> · ASSAÍ</b><small>PRODUÇÃO POR COLABORADOR · CICLO OPERACIONAL</small></div><span class="developer-credit" id="developerCredit" aria-label="Desenvolvido por Pablo Martins Lopes"></span></div><div class="top-actions"><span class="pill version-tag" id="appVersion" title="Versão do painel">v1.0.1</span><span class="pill"><i class="dot busy" id="connDot"></i><span id="connText">Conectando…</span></span><button class="btn" id="userBtn" hidden>USER</button><button class="btn" id="themeBtn" type="button">☀️ Modo claro</button><button class="btn" id="logoutBtn" type="button">Sair</button></div></header>
-<section class="prod-hero"><div><div class="eyebrow">INDICADORES · PRODUTIVIDADE DIÁRIA</div><h1>Painel de <span>produtividade</span></h1><p class="prod-description">Caixas = soma de QTDEMBCONTADA por colaborador e DTA CICLO. Turno, cargo e gestor vinculados pela matrícula ao quadro vigente.</p></div><div class="prod-controls"><div class="field"><label for="monthInput">MÊS DE REFERÊNCIA</label><input id="monthInput" type="month"></div><button class="btn" id="basesBtn" type="button">BASES</button><button class="btn btn-primary" id="reloadBtn" type="button">↻ ATUALIZAR DADOS</button></div></section>
+<section class="prod-hero"><div><div class="eyebrow">INDICADORES · PRODUTIVIDADE DIÁRIA</div><h1>Painel de <span>produtividade</span></h1><p class="prod-description">Caixas = soma de QTDEMBCONTADA por colaborador e DTA CICLO. Turno, cargo e gestor vinculados pela matrícula ao quadro vigente.</p></div><div class="prod-controls"><div class="field"><label for="monthInput">MÊS DE REFERÊNCIA</label><input id="monthInput" type="month"></div><button class="btn" id="basesBtn" type="button">BASES</button><button class="btn" id="resetDbBtn" type="button" hidden>ZERAR BD</button><button class="btn btn-primary" id="reloadBtn" type="button">↻ ATUALIZAR DADOS</button></div></section>
 <section class="prod-panel"><header class="panel-head"><div><h2 id="pageTitle">Produtividade · colaboradores × dia</h2><p id="pageSub">Mês vigente · soma de QTDEMBCONTADA por CODPRODUTIVO e DTA CICLO; média final exclui fins de semana e feriados nacionais.</p></div><div class="month-label" id="monthLabel">—</div></header>
 <nav class="tabs" id="tabs"><button class="tab on" data-view="tabela" type="button">📦 PRODUTIVIDADE</button><button class="tab" data-view="gestor" type="button">👔 GESTOR</button><button class="tab" data-view="turno" type="button">🕒 TURNO</button><button class="tab" data-view="capgestor" type="button">⚖ CAPACIDADE · GESTOR</button><button class="tab" data-view="capturno" type="button">⚖ CAPACIDADE · TURNO</button><button class="tab" data-view="macro" type="button">📈 MACRO</button></nav>
 <div class="prod-filterbar"><div class="field"><label for="managerFilter">GESTOR</label><select id="managerFilter"><option value="">Todos os gestores</option></select></div><div class="field"><label for="shiftFilter">TURNO</label><select id="shiftFilter"><option value="">Todos os turnos</option></select></div><button class="btn" id="clearFilters" type="button">Limpar filtros</button></div>
@@ -394,13 +394,22 @@ td.nd{color:var(--quiet)}
 <footer class="prod-foot"><span>ASSAÍ · PRODUTIVIDADE · PAINEL ANALÍTICO</span><span>PLT_FECH · QUADRO E GESTOR DO ABS</span></footer></main>
 <div class="lg" id="lg"><video class="lg-video" id="lgVideo" muted loop playsinline preload="auto"></video><form class="lg-card" id="lgForm"><div class="brand"><div class="mark">P</div><div><b><em>PRODUTIVIDADE</em> · ASSAÍ</b><small>PAINEL DE PRODUTIVIDADE</small></div></div><h1>Acesso restrito</h1><p>Entre com sua matrícula e senha do ABS.</p><div class="field"><label for="lgUser">MATRÍCULA</label><input id="lgUser" inputmode="numeric" autocomplete="username" required></div><div class="field"><label for="lgPass">SENHA</label><input id="lgPass" type="password" autocomplete="current-password" required></div><div class="lg-err" id="lgErr" role="alert"></div><button class="btn btn-primary" id="lgBtn" type="submit">ENTRAR</button><div class="lg-st" id="lgSt">Validando acesso…</div><div class="lg-cred">Desenvolvido por Pablo Martins Lopes</div></form></div>
 <div class="ld" id="ld" role="status" aria-live="polite" hidden><video class="lg-video" id="ldVideo" muted loop playsinline preload="auto"></video><div class="black-hole" aria-hidden="true"><span class="bh-object bh-number" style="--x:7vw;--y:16vh;--delay:-.2s;--dur:4.2s">01</span><span class="bh-object bh-number violet" style="--x:18vw;--y:78vh;--delay:-2.1s;--dur:4.8s">42</span><span class="bh-object bh-number" style="--x:88vw;--y:19vh;--delay:-1.4s;--dur:3.9s">87</span><span class="bh-object bh-number violet" style="--x:79vw;--y:86vh;--delay:-.8s;--dur:4.5s">23</span><span class="bh-object bh-number" style="--x:48vw;--y:7vh;--delay:-3s;--dur:4.1s">10</span><span class="bh-object bh-planet ringed" style="--x:12vw;--y:42vh;--size:32px;--delay:-1.2s;--dur:5s"></span><span class="bh-object bh-planet blue" style="--x:84vw;--y:39vh;--size:25px;--delay:-3.2s;--dur:4.6s"></span><span class="bh-object bh-person" style="--x:25vw;--y:59vh;--delay:-2.7s;--dur:4.4s">🧍</span><span class="bh-object bh-person" style="--x:68vw;--y:28vh;--delay:-.9s;--dur:4.8s">🧍</span><span class="bh-object bh-comet" style="--x:43vw;--y:17vh;--delay:-2.2s;--dur:3.8s"></span><div class="bh-center"><div class="black-hole-halo"></div><div class="bh-streak"></div><div class="bh-streak s2"></div><div class="bh-streak s3"></div><div class="black-hole-disk"></div><div class="black-hole-core"></div></div></div><div class="ld-box"><div class="ld-t" id="loadingTitle">CARREGANDO DADOS...</div><div class="ld-s"><span id="loadingText">Conectando ao Supabase…</span> <b id="ldPct"></b></div><div class="ld-bar ind" id="loadingBar"><i></i></div></div></div>
-<div class="jm" id="teamModal" hidden role="dialog" aria-modal="true" aria-labelledby="teamTitle"><div class="jm-card" id="teamCard"><div class="jm-h"><div><h3 id="teamTitle">Equipe · produção diária</h3><small id="teamSub">Médias do dia ordenadas da maior para a menor.</small></div><button class="jm-x" id="teamX" type="button" aria-label="Fechar">✕</button></div><div class="jm-b"><div class="tw team-modal-wrap"><table class="mx team-modal-table"><thead><tr><th>MATRÍCULA</th><th>PRODUTIVO</th><th>TURNO</th><th>PRESENÇA</th><th>MÉDIA DO DIA (CAIXAS)</th></tr></thead><tbody id="teamRows"></tbody></table></div></div><div class="jm-f"><button class="btn" id="teamClose" type="button">Fechar</button></div></div></div>
-<div class="jm" id="basesModal" hidden role="dialog" aria-modal="true" aria-labelledby="basesTitle"><div class="jm-card" id="basesCard"><div class="jm-h"><div><h3 id="basesTitle">BASES · importar arquivos TXT</h3><small>Processa TXT em blocos, mostra o andamento e grava em lotes paralelos sem congelar a tela.</small></div><button class="jm-x" id="basesX" type="button" aria-label="Fechar">✕</button></div><div class="jm-b"><div class="field" style="max-width:300px;margin-bottom:12px"><label for="cycleDateFilter">CICLO DE PRODUÇÃO · DTA CICLO</label><input id="cycleDateFilter" type="date" aria-describedby="cycleDateHelp"><small id="cycleDateHelp">Serão analisadas e importadas somente as linhas deste ciclo.</small></div><div class="base-drop" id="dropZone"><strong>Arraste um ou vários arquivos TXT para cá</strong><br>ou escolha os arquivos no dispositivo.<div class="base-actions"><input id="txtFiles" type="file" accept=".txt,text/plain" multiple><button class="btn" id="analyzeBtn" type="button">Analisar arquivos</button><button class="btn btn-primary" id="importBtn" type="button" disabled>Importar / atualizar</button></div><div class="hint">Somente linhas PLTFECHADO = NÃO com DTAHORFATURAMENTO preenchida. Datas de ciclo avançam um dia quando a tarefa termina a partir das 22h. Duplicatas idênticas são ignoradas; linhas alteradas são atualizadas.</div></div><div class="base-progress" id="baseProgress" hidden><div class="base-progress-head"><b id="baseProgressLabel">Preparando…</b><span id="baseProgressPct">0%</span></div><div class="base-progress-track" role="progressbar" aria-label="Progresso da importação" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="baseProgressTrack"><i id="baseProgressFill"></i></div></div><div id="baseStatus" class="base-status"></div></div><div class="jm-f"><button class="btn" id="basesClose" type="button">Fechar</button></div></div></div>
+<div class="jm" id="teamModal" hidden role="dialog" aria-modal="true" aria-labelledby="teamTitle"><div class="jm-card" id="teamCard"><div class="jm-h"><div><h3 id="teamTitle">Equipe · produção diária</h3><small id="teamSub">Médias do dia ordenadas da maior para a menor.</small></div><button class="jm-x" id="teamX" type="button" aria-label="Fechar">✕</button></div><div class="jm-b"><div class="tw team-modal-wrap"><table class="mx team-modal-table"><thead><tr><th>MATRÍCULA</th><th>NOME</th><th>IDADE</th><th>CARGO</th><th>TURNO</th><th>TEMPO DE CASA</th><th>PRODUTIVIDADE DO DIA (CAIXAS)</th></tr></thead><tbody id="teamRows"></tbody></table></div></div><div class="jm-f"><button class="btn" id="teamClose" type="button">Fechar</button></div></div></div>
+<div class="jm" id="basesModal" hidden role="dialog" aria-modal="true" aria-labelledby="basesTitle"><div class="jm-card" id="basesCard"><div class="jm-h"><div><h3 id="basesTitle">BASES · importar arquivos TXT</h3><small>Processa TXT em blocos, mostra o andamento e grava em lotes paralelos sem congelar a tela.</small></div><button class="jm-x" id="basesX" type="button" aria-label="Fechar">✕</button></div><div class="jm-b"><div class="field" style="max-width:300px;margin-bottom:12px"><label for="cycleDateFilter">CICLO DE PRODUÇÃO · DTA CICLO</label><input id="cycleDateFilter" type="date" aria-describedby="cycleDateHelp"><small id="cycleDateHelp">Serão analisadas e importadas somente as linhas deste ciclo.</small></div><div class="base-drop" id="dropZone"><strong>Arraste um ou vários arquivos TXT para cá</strong><br>ou escolha os arquivos no dispositivo.<div class="base-actions"><input id="txtFiles" type="file" accept=".txt,text/plain" multiple><button class="btn" id="analyzeBtn" type="button">Analisar arquivos</button><button class="btn btn-primary" id="importBtn" type="button" disabled>Importar / atualizar</button></div><div class="hint">Somente linhas PLTFECHADO = NÃO com DTAHORFATURAMENTO preenchida. Datas de ciclo avançam um dia quando a tarefa termina a partir das 22h.<br><br><strong>Antes de importar, baixe todas as bases do primeiro dia do mês anterior até a data de atualização, divididas em períodos de 10 dias.</strong><br>O sistema sincroniza somente o ciclo selecionado com os TXT carregados: insere novos registros, atualiza QTDPESOBRUTO e QTDEMBCONTADA quando necessário e remove registros do ciclo que não existirem mais nos TXT. Outros ciclos permanecem intactos.</div></div><div class="field" style="margin-top:14px">
+<label for="pasteData">OPÇÃO 3 · COLAR DADOS PARA SINCRONIZAR</label>
+<textarea id="pasteData" rows="8" placeholder="Cole aqui os dados incluindo o cabeçalho:\nDTA CICLO\tNROCARGA\tSEQLOTE\tSEQPRODUTO\tCODPRODUTIVO\tPRODUTIVO\tQTDPESOBRUTO\tQTDEMBCONTADA\tTURNO" style="width:100%;min-height:180px;background:var(--panel3);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:12px;resize:vertical"></textarea>
+<small class="hint">Cole os dados com cabeçalho. Aceita separador TAB, ponto e vírgula (;) ou vírgula (.). A sincronização usará os ciclos presentes nos dados colados.</small>
+<div class="base-actions">
+<button class="btn btn-primary" id="pasteSyncBtn" type="button">Sincronizar dados colados</button>
+<button class="btn" id="pasteClearBtn" type="button">Limpar área colada</button>
+</div>
+</div>
+<div class="base-progress" id="baseProgress" hidden><div class="base-progress-head"><b id="baseProgressLabel">Preparando…</b><span id="baseProgressPct">0%</span></div><div class="base-progress-track" role="progressbar" aria-label="Progresso da importação" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="baseProgressTrack"><i id="baseProgressFill"></i></div></div><div id="baseStatus" class="base-status"></div></div><div class="jm-f"><button class="btn" id="basesClose" type="button">Fechar</button></div></div></div>
 <div class="jm" id="um" hidden role="dialog" aria-modal="true" aria-labelledby="umTitle"><div class="jm-card" id="umCard"><div class="jm-h"><div><h3 id="umTitle">USER · usuários</h3><small>Pesquisar, cadastrar, alterar ou excluir usuários em ABS_USER</small></div><button class="jm-x" id="umFecha" type="button" aria-label="Fechar">✕</button></div><div class="jm-b"><div class="sbox"><span class="ico">⌕</span><input id="umBusca" type="search" placeholder="Pesquisar matrícula ou nome…"></div><div class="tw" style="max-height:30vh"><table class="mx"><thead><tr><th>MATRÍCULA</th><th>NOME</th><th>NÍVEL</th><th>AÇÕES</th></tr></thead><tbody id="umRows"></tbody></table></div><div class="jm-row"><div><label>MATRÍCULA</label><input id="umMat" inputmode="numeric"></div><div><label>NOME</label><input id="umName"></div></div><div class="jm-row"><div><label>NÍVEL</label><select id="umLevel"><option>1</option><option selected>2</option><option>3</option></select></div><div><label>SENHA <span id="umPassHint">(obrigatória ao cadastrar)</span></label><input id="umPass" type="password" autocomplete="new-password"></div></div><div id="umMsg" class="jm-msg" hidden></div></div><div class="jm-f"><button class="btn" id="umNovo" type="button">Novo usuário</button><button class="btn" id="umCancel" type="button">Fechar</button><button class="btn btn-primary" id="umSalva" type="button">Cadastrar usuário</button></div></div></div>
 <script>'use strict';(()=>{
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const URL_SB='https://bebhhbimcaptgrioxxcw.supabase.co',KEY_SB='sb_publishable_LUjptV9j-EiIuG2Bc7UrKg_can_vhn_',JWT_SB='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJlYmhoYmltY2FwdGdyaW94eGN3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQyODE2MjksImV4cCI6MjA5OTg1NzYyOX0.WIhrT6A8LAh5BtV1pVz9xnONewehes155OhpgE1lXmI';
-const TABLE='PLT_FECH',FIELDS=['DTA REAL','DTA CICLO','NROCARGA','SEQLOTE','SEQPRODUTO','CODPRODUTIVO','PRODUTIVO','QTDPESOBRUTO','QTDEMBCONTADA'];
+const TABLE='PLT_FECH',FIELDS=['DTA CICLO','NROCARGA','SEQLOTE','SEQPRODUTO','CODPRODUTIVO','PRODUTIVO','QTDPESOBRUTO','QTDEMBCONTADA'];
 const nf=new Intl.NumberFormat('pt-BR'),nf1=new Intl.NumberFormat('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1});
 const headers=()=>({apikey:KEY_SB,Authorization:'Bearer '+JWT_SB,Accept:'application/json'});
 const norm=v=>String(v??'').trim(),normName=v=>norm(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase(),normMat=v=>{let x=norm(v).replace(/\s/g,'');return /^\d+(?:\.0+)?$/.test(x)?x.replace(/\.0+$/,'').replace(/^0+(?=\d)/,''):x},esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -423,7 +432,7 @@ async function readTable(table,select='*',filters={},order='',onPage=null){
  const u=new URL(`${URL_SB}/rest/v1/${encodeURIComponent(table)}`);u.searchParams.set('select',select);if(order)u.searchParams.set('order',order);for(const[k,v]of Object.entries(filters)){if(k.endsWith('_2'))u.searchParams.append(k.slice(0,-2),v);else u.searchParams.set(k,v)}
  const out=[];for(let off=0;off<10000000;off+=1000){const r=await fetch(u,{headers:{...headers(),'Range-Unit':'items',Range:`${off}-${off+999}`},cache:'no-store'});if(!r.ok)throw Error(`${table} · HTTP ${r.status} · ${await apiError(r)}`);const a=await r.json();if(!Array.isArray(a))throw Error(`${table}: resposta inválida`);out.push(...a);let total=NaN;const cr=r.headers.get('Content-Range')||'';const mm=cr.match(/\/(\d+|\*)$/);if(mm&&mm[1]!=='*')total=+mm[1];if(onPage)onPage(out.length,total);if(a.length<1000)break}return out
 }
-let user='',authed=false,rows=[],roster=[],managers=new Map(),month='',days=[],view='tabela',fileRows=[],selectedFiles=[],filterManager='',filterShift='',firstMonthLoad=true,presence=new Set(),presenceMonth='',managerMetric='quant',shiftMetric='media',capManagerChoice='*',capShiftChoice='*';
+let user='',authed=false,rows=[],roster=[],managers=new Map(),month='',days=[],view='tabela',fileRows=[],selectedFiles=[],filterManager='',filterShift='',firstMonthLoad=true,presence=new Set(),presenceMonth='',managerMetric='quant',shiftMetric='media',capManagerChoice='*',capShiftChoice='*',peopleSearch='';
 function status(text,type=''){const el=$('#connText');el.textContent=text;$('#connDot').className='dot '+(type==='ok'?'ok':type==='err'?'error':'busy')}
 function loading(on,title='Consultando dados…',text='Aguarde…'){$('#ld').hidden=!on;$('#loadingTitle').textContent=title;$('#loadingText').textContent=text;if(on)startBgVideo($('#ldVideo'));else{$('#ldVideo').pause();$('#ldVideo').classList.remove('on')}}
 function monthBounds(){const [y,m]=month.split('-').map(Number);return{y,m,first:`${y}-${String(m).padStart(2,'0')}-01`,next:nextMonth(y,m)}}
@@ -431,18 +440,18 @@ function currentRows(){
  const production=new Map();
  for(const r of rows){const mat=normMat(r.CODPRODUTIVO);if(!mat)continue;const day=isoDate(r['DTA CICLO']);if(!day)continue;let o=production.get(mat);if(!o)o={sum:0,byDay:new Map(),prod:''};const q=Number(r.QTDEMBCONTADA)||0;o.sum+=q;o.byDay.set(day,(o.byDay.get(day)||0)+q);if(norm(r.PRODUTIVO))o.prod=norm(r.PRODUTIVO);production.set(mat,o)}
  const byMat=new Map(roster.map(p=>[p.mat,p]));
- return [...production.entries()].map(([mat,o])=>{const p=byMat.get(mat);if(!p||normName(p.cargo)!=='SEPARADOR CD'||!o.prod)return null;const g=managers.get(mat)||{};return{mat,prod:o.prod,cargo:p.cargo,turno:p.turno,gestor:g.nome||'Sem gestor',setor:g.setor||p.setor||'—',sum:o.sum,byDay:o.byDay}}).filter(p=>p&&(!filterManager||p.gestor===filterManager)&&(!filterShift||p.turno===filterShift)).sort((a,b)=>a.prod.localeCompare(b.prod,'pt-BR'))
+ return [...production.entries()].map(([mat,o])=>{const p=byMat.get(mat);if(!p||!o.prod)return null;const g=managers.get(mat)||{};return{mat,prod:o.prod,cargo:p.cargo,turno:p.turno,gestor:g.nome||'Sem gestor',setor:g.setor||p.setor||'—',sum:o.sum,byDay:o.byDay}}).filter(p=>p&&(!filterManager||p.gestor===filterManager)&&(!filterShift||p.turno===filterShift)).sort((a,b)=>a.prod.localeCompare(b.prod,'pt-BR'))
 }
 function recordsFor(list=currentRows()){const mats=new Set(list.map(p=>p.mat));return rows.filter(r=>mats.has(normMat(r.CODPRODUTIVO)))}
-function fillFilters(){const people=roster.filter(p=>normName(p.cargo)==='SEPARADOR CD'),gs=[...new Set(people.map(p=>(managers.get(p.mat)||{}).nome||'Sem gestor'))].sort((a,b)=>a.localeCompare(b,'pt-BR')),ts=[...new Set(people.map(p=>p.turno).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pt-BR',{numeric:true}));$('#managerFilter').innerHTML='<option value="">Todos os gestores</option>'+gs.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');$('#shiftFilter').innerHTML='<option value="">Todos os turnos</option>'+ts.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');$('#managerFilter').value=gs.includes(filterManager)?filterManager:'';filterManager=$('#managerFilter').value;$('#shiftFilter').value=ts.includes(filterShift)?filterShift:'';filterShift=$('#shiftFilter').value}
-function renderTable(){const list=currentRows(),workdays=businessDays(),body=list.map(p=>`<tr><td>${esc(p.prod)}<span class="prod-person-sub">${esc(p.cargo)} · Turno ${esc(p.turno)} · Gestor: ${esc(p.gestor)}</span></td>${days.map(d=>{const v=p.byDay.get(d)||0;return`<td class="${v?'':'zero'}">${v?nf.format(v):'—'}</td>`}).join('')}<td class="sum">${nf1.format(workdays.length?dailyBusinessSum(p,workdays)/workdays.length:0)}</td></tr>`).join('');const head=`<tr><th>COLABORADOR · CARGO · TURNO · GESTOR</th>${days.map(d=>`<th class="prod-day-head"><b>${d.slice(8)}</b><small>${new Date(d+'T12:00:00Z').toLocaleDateString('pt-BR',{weekday:'short',timeZone:'UTC'}).toUpperCase()}</small></th>`).join('')}<th>MÉDIA / DIA ÚTIL</th></tr>`;const empty=rows.length?`Nenhum SEPARADOR CD encontrado no quadro para os filtros.`:`Sem registros de PLT_FECH para ${esc($('#monthLabel').textContent)}. A data de referência é DTA CICLO; confirme o mês ou importe os TXT.`;$('#view').innerHTML=`<div class="hint">${list.length} SEPARADOR CD · nomes de PLT_FECH.PRODUTIVO · vínculo CODPRODUTIVO ↔ ABS_QUADRO.MATRICULA · cada dia soma QTDEMBCONTADA por DTA CICLO · média por ${workdays.length} dia(s) útil(eis), sem sábados, domingos e feriados nacionais.</div><div class="prod-grid-wrap"><table class="prod-table"><thead>${head}</thead><tbody>${body||`<tr><td colspan="${days.length+2}">${empty}</td></tr>`}</tbody></table></div>`;renderKpis(list)}
-function renderKpis(list){const selected=recordsFor(list),workdays=businessDays(),workset=new Set(workdays),workTotal=selected.filter(r=>workset.has(isoDate(r['DTA CICLO']))).reduce((sum,r)=>sum+(Number(r.QTDEMBCONTADA)||0),0),avg=workdays.length?workTotal/workdays.length:0,people=list.filter(p=>dailyBusinessSum(p,workdays)>0).length;$('#kpis').innerHTML=`<div class="prod-kpi"><span>CAIXAS EM DIAS ÚTEIS</span><b>${nf.format(workTotal)}</b><small>QTDEMBCONTADA · filtros aplicados</small></div><div class="prod-kpi"><span>MÉDIA POR DIA ÚTIL</span><b>${nf1.format(avg)}</b><small>${workdays.length} dia(s) útil(eis), sem sábados, domingos e feriados nacionais</small></div><div class="prod-kpi"><span>COLABORADORES COM PRODUÇÃO</span><b>${nf.format(people)}</b><small>SEPARADOR CD nos filtros</small></div><div class="prod-kpi"><span>REGISTROS DA BASE</span><b>${nf.format(selected.length)}</b><small>PLT_FECH · colaboradores filtrados</small></div>`}
-function renderMacro(){const list=currentRows(),selected=recordsFor(list),workdays=businessDays(),workset=new Set(workdays),totalBy=days.map(d=>({day:d,total:selected.filter(r=>isoDate(r['DTA CICLO'])===d).reduce((sum,r)=>sum+(Number(r.QTDEMBCONTADA)||0),0)})),workingTotals=totalBy.filter(x=>workset.has(x.day)),workTotal=workingTotals.reduce((sum,x)=>sum+x.total,0),avg=workdays.length?workTotal/workdays.length:0,max=Math.max(1,...totalBy.map(x=>x.total)),people=list.filter(p=>dailyBusinessSum(p,workdays)>0).length;$('#kpis').innerHTML=`<div class="prod-kpi"><span>CAIXAS EM DIAS ÚTEIS</span><b>${nf.format(workTotal)}</b><small>Feriados e fins de semana excluídos</small></div><div class="prod-kpi"><span>MÉDIA DIÁRIA ÚTIL</span><b>${nf1.format(avg)}</b><small>Sobre ${workdays.length} dia(s) útil(eis) do período</small></div><div class="prod-kpi"><span>PICO EM DIA ÚTIL</span><b>${nf.format(Math.max(0,...workingTotals.map(x=>x.total)))}</b><small>${workingTotals.length?br([...workingTotals].sort((a,b)=>b.total-a.total)[0].day):'Sem produção em dia útil'}</small></div><div class="prod-kpi"><span>COLABORADORES ATIVOS</span><b>${nf.format(people)}</b><small>SEPARADOR CD · filtros aplicados</small></div>`;$('#view').innerHTML=`<div class="grid"><div class="card c12"><h3>PRODUÇÃO DIÁRIA · CAIXAS <em>QTDEMBCONTADA por DTA CICLO · filtros de gestor e turno aplicados</em></h3><div class="prod-chart">${totalBy.map(x=>`<div class="prod-bar" title="${br(x.day)} · ${nf.format(x.total)} caixas${workset.has(x.day)?' · dia útil':' · não entra na média'}"><b>${x.total?nf.format(x.total):'—'}</b><span class="track"><i style="height:${x.total?Math.max(2,x.total/max*100):2}%;${workset.has(x.day)?'':'opacity:.4'}"></i></span><small>${x.day.slice(8)}</small></div>`).join('')}</div></div><div class="card c12"><h3>MÉDIA DIÁRIA POR COLABORADOR <em>total QTDEMBCONTADA dos dias úteis ÷ dias úteis do período</em></h3><div class="scroll"><table class="mx"><thead><tr><th>COLABORADOR</th><th>CARGO</th><th>TURNO</th><th>GESTOR</th><th>MÉDIA / DIA ÚTIL</th></tr></thead><tbody>${[...list].sort((a,b)=>dailyBusinessSum(b,workdays)-dailyBusinessSum(a,workdays)).map(p=>{const avgEmp=workdays.length?dailyBusinessSum(p,workdays)/workdays.length:0;return`<tr><td>${esc(p.prod)}</td><td>${esc(p.cargo)}</td><td>${esc(p.turno)}</td><td>${esc(p.gestor)}</td><td>${nf1.format(avgEmp)}</td></tr>`}).join('')}</tbody></table></div></div></div>`}
+function fillFilters(){const people=roster,gs=[...new Set(people.map(p=>(managers.get(p.mat)||{}).nome||'Sem gestor'))].sort((a,b)=>a.localeCompare(b,'pt-BR')),ts=[...new Set(people.map(p=>p.turno).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pt-BR',{numeric:true}));$('#managerFilter').innerHTML='<option value="">Todos os gestores</option>'+gs.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');$('#shiftFilter').innerHTML='<option value="">Todos os turnos</option>'+ts.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');$('#managerFilter').value=gs.includes(filterManager)?filterManager:'';filterManager=$('#managerFilter').value;$('#shiftFilter').value=ts.includes(filterShift)?filterShift:'';filterShift=$('#shiftFilter').value}
+function renderTable(){const query=normName(peopleSearch),list=currentRows().filter(p=>!query||normName(p.mat).includes(query)||normName(p.prod).includes(query)),workdays=businessDays(),body=list.map(p=>`<tr><td>${esc(p.prod)}<span class="prod-person-sub">${esc(p.cargo)} · Turno ${esc(p.turno)} · Gestor: ${esc(p.gestor)}</span></td>${days.map(d=>{const v=p.byDay.get(d)||0;return`<td class="${v?'':'zero'}">${v?nf.format(v):'—'}</td>`}).join('')}<td class="sum">${nf1.format(workdays.length?dailyBusinessSum(p,workdays)/workdays.length:0)}</td></tr>`).join('');const head=`<tr><th>COLABORADOR · CARGO · TURNO · GESTOR</th>${days.map(d=>`<th class="prod-day-head"><b>${d.slice(8)}</b><small>${new Date(d+'T12:00:00Z').toLocaleDateString('pt-BR',{weekday:'short',timeZone:'UTC'}).toUpperCase()}</small></th>`).join('')}<th>MÉDIA / DIA ÚTIL</th></tr>`;const empty=rows.length?`Nenhum colaborador encontrado no quadro para os filtros.`:`Sem registros de PLT_FECH para ${esc($('#monthLabel').textContent)}. A data de referência é DTA CICLO; confirme o mês ou importe os TXT.`;$('#view').innerHTML=`<div class="prod-filterbar"><div class="field people-search"><label for="peopleSearch">PESQUISAR COLABORADOR · MATRÍCULA OU NOME</label><input id="peopleSearch" type="search" value="${esc(peopleSearch)}" placeholder="Digite matrícula ou nome…" autocomplete="off"></div></div><div class="hint">${list.length} colaborador(es) encontrado(s) · nomes de PLT_FECH.PRODUTIVO · vínculo CODPRODUTIVO ↔ ABS_QUADRO.MATRICULA · cada dia soma QTDEMBCONTADA por DTA CICLO · média por ${workdays.length} dia(s) útil(eis), sem sábados, domingos e feriados nacionais.</div><div class="prod-grid-wrap"><table class="prod-table"><thead>${head}</thead><tbody>${body||`<tr><td colspan="${days.length+2}">${empty}</td></tr>`}</tbody></table></div>`;renderKpis(list)}
+function renderKpis(list){const selected=recordsFor(list),workdays=businessDays(),workset=new Set(workdays),workTotal=selected.filter(r=>workset.has(isoDate(r['DTA CICLO']))).reduce((sum,r)=>sum+(Number(r.QTDEMBCONTADA)||0),0),avg=workdays.length?workTotal/workdays.length:0,people=list.filter(p=>dailyBusinessSum(p,workdays)>0).length;$('#kpis').innerHTML=`<div class="prod-kpi"><span>CAIXAS EM DIAS ÚTEIS</span><b>${nf.format(workTotal)}</b><small>QTDEMBCONTADA · filtros aplicados</small></div><div class="prod-kpi"><span>MÉDIA POR DIA ÚTIL</span><b>${nf1.format(avg)}</b><small>${workdays.length} dia(s) útil(eis), sem sábados, domingos e feriados nacionais</small></div><div class="prod-kpi"><span>COLABORADORES COM PRODUÇÃO</span><b>${nf.format(people)}</b><small>Colaboradores com produção nos filtros</small></div><div class="prod-kpi"><span>REGISTROS DA BASE</span><b>${nf.format(selected.length)}</b><small>PLT_FECH · colaboradores filtrados</small></div>`}
+function renderMacro(){const list=currentRows(),selected=recordsFor(list),workdays=businessDays(),workset=new Set(workdays),totalBy=days.map(d=>({day:d,total:selected.filter(r=>isoDate(r['DTA CICLO'])===d).reduce((sum,r)=>sum+(Number(r.QTDEMBCONTADA)||0),0)})),workingTotals=totalBy.filter(x=>workset.has(x.day)),workTotal=workingTotals.reduce((sum,x)=>sum+x.total,0),avg=workdays.length?workTotal/workdays.length:0,max=Math.max(1,...totalBy.map(x=>x.total)),people=list.filter(p=>dailyBusinessSum(p,workdays)>0).length;$('#kpis').innerHTML=`<div class="prod-kpi"><span>CAIXAS EM DIAS ÚTEIS</span><b>${nf.format(workTotal)}</b><small>Feriados e fins de semana excluídos</small></div><div class="prod-kpi"><span>MÉDIA DIÁRIA ÚTIL</span><b>${nf1.format(avg)}</b><small>Sobre ${workdays.length} dia(s) útil(eis) do período</small></div><div class="prod-kpi"><span>PICO EM DIA ÚTIL</span><b>${nf.format(Math.max(0,...workingTotals.map(x=>x.total)))}</b><small>${workingTotals.length?br([...workingTotals].sort((a,b)=>b.total-a.total)[0].day):'Sem produção em dia útil'}</small></div><div class="prod-kpi"><span>COLABORADORES ATIVOS</span><b>${nf.format(people)}</b><small>Colaboradores com produção · filtros aplicados</small></div>`;$('#view').innerHTML=`<div class="grid"><div class="card c12"><h3>PRODUÇÃO DIÁRIA · CAIXAS <em>QTDEMBCONTADA por DTA CICLO · filtros de gestor e turno aplicados</em></h3><div class="prod-chart">${totalBy.map(x=>`<div class="prod-bar" title="${br(x.day)} · ${nf.format(x.total)} caixas${workset.has(x.day)?' · dia útil':' · não entra na média'}"><b>${x.total?nf.format(x.total):'—'}</b><span class="track"><i style="height:${x.total?Math.max(2,x.total/max*100):2}%;${workset.has(x.day)?'':'opacity:.4'}"></i></span><small>${x.day.slice(8)}</small></div>`).join('')}</div></div><div class="card c12"><h3>MÉDIA DIÁRIA POR COLABORADOR <em>total QTDEMBCONTADA dos dias úteis ÷ dias úteis do período</em></h3><div class="scroll"><table class="mx"><thead><tr><th>COLABORADOR</th><th>CARGO</th><th>TURNO</th><th>GESTOR</th><th>MÉDIA / DIA ÚTIL</th></tr></thead><tbody>${[...list].sort((a,b)=>dailyBusinessSum(b,workdays)-dailyBusinessSum(a,workdays)).map(p=>{const avgEmp=workdays.length?dailyBusinessSum(p,workdays)/workdays.length:0;return`<tr><td>${esc(p.prod)}</td><td>${esc(p.cargo)}</td><td>${esc(p.turno)}</td><td>${esc(p.gestor)}</td><td>${nf1.format(avgEmp)}</td></tr>`}).join('')}</tbody></table></div></div></div>`}
 function localCycleDay(v){const s=norm(v);let d=null,h=0;let m=s.match(/^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{1,2}):(\d{2})(?::(\d{2}))?)?(?:[.,]\d{1,9})?\s*(Z|[+-]\d{2}:?\d{2})?$/i);if(m){const y=+m[1],mo=+m[2],dd=+m[3],hh=+(m[4]||0),mi=+(m[5]||0),ss=+(m[6]||0),tz=m[7];let date;if(tz){date=new Date(Date.UTC(y,mo-1,dd,hh,mi,ss));if(!/^z$/i.test(tz)){const raw=tz.slice(1).replace(':',''),off=(+raw.slice(0,2)*60+ +raw.slice(2,4))*(tz[0]==='-'?-1:1);date=new Date(date.getTime()-off*60000)}}else date=new Date(Date.UTC(y,mo-1,dd,hh+3,mi,ss));if(Number.isNaN(date.getTime()))return null;const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(date).reduce((a,x)=>(a[x.type]=x.value,a),{});d=`${parts.year}-${parts.month}-${parts.day}`;h=+parts.hour}else{m=s.match(/^(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{4})(?:[T ](\d{1,2}):(\d{2})(?::(\d{2}))?)?/);if(m){d=`${m[3]}-${String(+m[2]).padStart(2,'0')}-${String(+m[1]).padStart(2,'0')}`;h=+(m[4]||0)}else d=isoDate(s)}if(!d)return null;return h>=22?addIsoDays(d,1):d}
 function presencePatterns(y,m){const mm=String(m).padStart(2,'0'),mu=String(m),prev=addIsoDays(`${y}-${mm}-01`,-1),p=new Set([`${y}-${mm}-*`,`*/${mm}/${y}*`,`*/${mu}/${y}*`,`*-${mm}-${y}*`,`*-${mu}-${y}*`,`*.${mm}.${y}*`,`*.${mu}.${y}*`]);for(const day of [prev]){const [yy,mo,dd]=day.split('-'),du=String(+dd),mou=String(+mo);for(const sep of ['/','.','-'])for(const d0 of new Set([dd,du]))for(const m0 of new Set([mo,mou]))p.add(`${d0}${sep}${m0}${sep}${yy}*`);p.add(`${day}*`)}return [...p]}
 async function ensurePresence(){if(presenceMonth===month)return;const [y,m]=month.split('-').map(Number),patterns=presencePatterns(y,m);loading(true,'Lendo presenças…','Usando ABS_SURICATO e a regra de dia operacional do ABS.');try{const a=await readTable('ABS_SURICATO','MATRICULA,DTA',{or:`(${patterns.map(x=>'DTA.like.'+x).join(',')})`});const set=new Set();for(const r of a){const mat=normMat(r.MATRICULA),day=localCycleDay(r.DTA);if(mat&&day&&day.slice(0,7)===month)set.add(mat+'|'+day)}presence=set;presenceMonth=month}catch(e){throw Error('Falha ao carregar presenças do ABS_SURICATO: '+(e.message||e))}finally{loading(false)}}
 function isPresent(mat,day){return presence.has(normMat(mat)+'|'+day)}
-function rosterPeople(){return roster.filter(p=>normName(p.cargo)==='SEPARADOR CD'&&(!filterManager||(managers.get(p.mat)||{}).nome===filterManager)&&(!filterShift||p.turno===filterShift))}
+function rosterPeople(){return roster.filter(p=>(!filterManager||(managers.get(p.mat)||{}).nome===filterManager)&&(!filterShift||p.turno===filterShift))}
 function managerOf(p){return (managers.get(p.mat)||{}).nome||'Sem gestor'}
 function shiftKey(v){const s=normName(v);if(s.includes('CD'))return'CD';const m=s.match(/[1-4]/);return m?`${m[0]} TURNO`:s}
 function productionIndex(){const idx=new Map();for(const r of rows){const mat=normMat(r.CODPRODUTIVO),day=isoDate(r['DTA CICLO']);if(!mat||!day)continue;const key=mat+'|'+day;let x=idx.get(key);if(!x)x={qty:0,name:''};x.qty+=Number(r.QTDEMBCONTADA)||0;if(norm(r.PRODUTIVO))x.name=norm(r.PRODUTIVO);idx.set(key,x)}return idx}
@@ -451,27 +460,220 @@ function teamsByManager(){const map=new Map();for(const p of rosterPeople()){con
 function teamStats(){const idx=productionIndex(),teams=teamsByManager().map(t=>{let total=0,presDays=0;const dayMap=new Map();for(const day of days){let qty=0,presentCount=0;for(const p of t.members){qty+=productionFor(idx,p.mat,day).qty;if(isPresent(p.mat,day))presentCount++}dayMap.set(day,{qty,present:presentCount,avg:presentCount?qty/presentCount:null,capacity:presentCount*800});total+=qty;presDays+=presentCount}return{...t,dayMap,total,presDays,monthAvg:presDays?total/presDays:0}});return teams.sort((a,b)=>b.monthAvg-a.monthAvg||a.name.localeCompare(b.name,'pt-BR'))}
 function formatManagerValue(avg){if(avg===null)return'—';return managerMetric==='quant'?nf1.format(avg):nf1.format(avg/800*100)+'%'}
 function renderManager(){const stats=teamStats(),metricLabel=managerMetric==='quant'?'QUANTITATIVO':'PERCENTUAL',body=stats.map(t=>{const cells=days.map(d=>{const x=t.dayMap.get(d),v=x.avg,cls=v===null?'':v<800?'below-target':'hit-target';return`<td class="manager-cell ${cls}" data-manager="${esc(t.name)}" data-day="${d}" title="Duplo clique para ver a equipe · ${x.present} presente(s) · meta 800">${formatManagerValue(v)}</td>`}).join('');const monthVal=t.presDays?(managerMetric==='quant'?nf1.format(t.monthAvg):nf1.format(t.monthAvg/800*100)+'%'):'—';return`<tr><td class="mgr-name">${esc(t.name)}<small>${t.members.length} colaborador(es) no quadro · média mensal ${nf1.format(t.monthAvg)}</small></td>${cells}<td class="month-avg">${monthVal}</td></tr>`}).join('');const head=`<tr><th>GESTOR</th>${days.map(d=>`<th class="prod-day-head"><b>${d.slice(8)}</b><small>${new Date(d+'T12:00:00Z').toLocaleDateString('pt-BR',{weekday:'short',timeZone:'UTC'}).toUpperCase()}</small></th>`).join('')}<th>MÉDIA GERAL DO MÊS</th></tr>`;$('#view').innerHTML=`<div class="prod-metrics"><span class="target-badge">META: 800 CAIXAS POR PRESENTE</span><div class="field"><label>MÉTRICA</label><div class="seg" id="managerMetric"><button type="button" data-metric="quant" class="${managerMetric==='quant'?'on':''}">QUANTITATIVO</button><button type="button" data-metric="pct" class="${managerMetric==='pct'?'on':''}">PERCENTUAL</button></div></div></div><div class="hint">Média diária = soma de caixas do time ÷ colaboradores presentes no ABS_SURICATO. Duplo clique em um valor para abrir a equipe, maior produção primeiro. Linhas ordenadas pela média mensal geral.</div><div class="prod-grid-wrap manager-wrap"><table class="prod-table manager-table"><thead>${head}</thead><tbody>${body||`<tr><td colspan="${days.length+2}">Nenhum gestor com colaboradores nos filtros.</td></tr>`}</tbody></table></div>`}
-function openTeamModal(manager,day){const idx=productionIndex(),team=teamsByManager().find(t=>t.name===manager);if(!team)return;const people=team.members.map(p=>{const x=productionFor(idx,p.mat,day);return{mat:p.mat,name:x.name||p.nome||p.mat,turno:shiftKey(p.turno),present:isPresent(p.mat,day),qty:x.qty}}).sort((a,b)=>b.qty-a.qty||a.name.localeCompare(b.name,'pt-BR'));$('#teamTitle').textContent=`${manager} · ${br(day)}`;$('#teamSub').textContent=`${people.length} colaborador(es) da equipe · produção do dia ordenada da maior para a menor.`;$('#teamRows').innerHTML=people.map(p=>`<tr><td>${esc(p.mat)}</td><td>${esc(p.name)}</td><td>${esc(p.turno)}</td><td class="${p.present?'':'team-absent'}">${p.present?'PRESENTE':'SEM PRESENÇA'}</td><td class="team-qty">${nf.format(p.qty)}</td></tr>`).join('')||'<tr><td colspan="5">Sem colaboradores.</td></tr>';$('#teamModal').hidden=false}
-function renderShift(){const idx=productionIndex(),order=['CD','3 TURNO','1 TURNO','2 TURNO'],members=rosterPeople(),metricLabel=shiftMetric==='media'?'MÉDIA':'SOMA',body=order.map(key=>{const set=members.filter(p=>shiftKey(p.turno)===key),totalCount=set.length;return`<tr><td class="mgr-name">${key}<small>${totalCount} colaborador(es) · ${shiftMetric==='media'?'média diária por colaborador':'produção total diária'}</small></td>${days.map(d=>{const total=set.reduce((sum,p)=>sum+productionFor(idx,p.mat,d).qty,0),value=shiftMetric==='media'?(totalCount?total/totalCount:0):total;return`<td class="${value?'':'zero'}">${value?nf1.format(value):'—'}</td>`}).join('')}</tr>`}).join('');const head=`<tr><th>TURNO · ${metricLabel}</th>${days.map(d=>`<th class="prod-day-head"><b>${d.slice(8)}</b><small>${new Date(d+'T12:00:00Z').toLocaleDateString('pt-BR',{weekday:'short',timeZone:'UTC'}).toUpperCase()}</small></th>`).join('')}</tr>`;const explain=shiftMetric==='media'?'MÉDIA = soma de QTDEMBCONTADA do turno no dia ÷ todos os colaboradores do turno no quadro (quem não produziu conta como zero).':'SOMA = total de QTDEMBCONTADA de todos os colaboradores do turno no dia.';$('#view').innerHTML=`<div class="prod-metrics"><div class="field"><label>VISUALIZAÇÃO</label><div class="seg" id="shiftMetric"><button type="button" data-shift-metric="media" class="${shiftMetric==='media'?'on':''}">MÉDIA</button><button type="button" data-shift-metric="soma" class="${shiftMetric==='soma'?'on':''}">SOMA</button></div></div></div><div class="hint">${explain} Valores calculados pela produção individual associada a CODPRODUTIVO, agrupada por DTA CICLO. Ordem dos turnos: CD, 3 TURNO, 1 TURNO, 2 TURNO.</div><div class="prod-grid-wrap manager-wrap"><table class="prod-table manager-table"><thead>${head}</thead><tbody>${body}</tbody></table></div>`}
+function fieldValue(obj,names){const keys=new Map(Object.keys(obj||{}).map(k=>[normName(k).replace(/[^A-Z0-9]/g,''),obj[k]]));for(const name of names){const v=keys.get(normName(name).replace(/[^A-Z0-9]/g,''));if(v!==undefined&&v!==null&&norm(v)!=='')return v}return null}
+function ageText(person){const raw=fieldValue(person,['IDADE','IDADE ANOS','AGE']);if(raw!==null&&Number.isFinite(Number(String(raw).replace(',','.'))))return `${nf.format(Number(String(raw).replace(',','.')))} anos`;const dob=fieldValue(person,['DTANASCIMENTO','DATA NASCIMENTO','NASCIMENTO','DTA NASCIMENTO','DATANASCIMENTO']);const iso=isoDate(dob);if(!iso)return '—';const [y,m,d]=iso.split('-').map(Number),today=hoje().split('-').map(Number);let age=today[0]-y;if(today[1]<m||(today[1]===m&&today[2]<d))age--;return age>=0&&age<125?`${age} anos`:'—'}
+function tenureText(person){const raw=fieldValue(person,['TEMPO DE CASA','TEMPOCASA','TENURE']);if(raw!==null)return norm(raw);const start=fieldValue(person,['DTADMISSAO','DATA ADMISSAO','DTA ADMISSAO','ADMISSAO','DATA DE ADMISSAO','DTACADASTRO','DATA CONTRATACAO','DTACONTRATACAO']);const iso=isoDate(start);if(!iso)return '—';const [y,m,d]=iso.split('-').map(Number),today=hoje().split('-').map(Number);let months=(today[0]-y)*12+(today[1]-m);if(today[2]<d)months--;if(months<0)return '—';return `${Math.floor(months/12)}a ${months%12}m`}
+function openTeamModal(groupName,day,scope='manager'){const idx=productionIndex(),members=scope==='shift'?rosterPeople().filter(p=>shiftKey(p.turno)===groupName):(teamsByManager().find(t=>t.name===groupName)||{}).members;if(!members)return;const people=members.map(p=>{const x=productionFor(idx,p.mat,day);return{mat:p.mat,name:p.nome||x.name||p.mat,age:ageText(p),cargo:p.cargo||'—',turno:shiftKey(p.turno),tenure:tenureText(p),qty:x.qty}}).sort((a,b)=>b.qty-a.qty||a.name.localeCompare(b.name,'pt-BR'));$('#teamTitle').textContent=`${groupName} · ${br(day)}`;$('#teamSub').textContent=`${people.length} colaborador(es) · produtividade de ${br(day)}, ordenada da maior para a menor.`;$('#teamRows').innerHTML=people.map(p=>`<tr><td>${esc(p.mat)}</td><td>${esc(p.name)}</td><td>${esc(p.age)}</td><td>${esc(p.cargo)}</td><td>${esc(p.turno)}</td><td>${esc(p.tenure)}</td><td class="team-qty">${nf.format(p.qty)}</td></tr>`).join('')||'<tr><td colspan="7">Sem colaboradores.</td></tr>';$('#teamModal').hidden=false}
+function renderShift(){const idx=productionIndex(),order=['CD','3 TURNO','1 TURNO','2 TURNO'],members=rosterPeople(),metricLabel=shiftMetric==='media'?'MÉDIA':'SOMA',body=order.map(key=>{const set=members.filter(p=>shiftKey(p.turno)===key),totalCount=set.length;return`<tr><td class="mgr-name">${key}<small>${totalCount} colaborador(es) · ${shiftMetric==='media'?'média diária por colaborador':'produção total diária'}</small></td>${days.map(d=>{const total=set.reduce((sum,p)=>sum+productionFor(idx,p.mat,d).qty,0),value=shiftMetric==='media'?(totalCount?total/totalCount:0):total;return`<td class="manager-cell shift-cell ${value?'':'zero'}" data-shift="${esc(key)}" data-day="${d}" title="Duplo clique para ver a produtividade individual do turno">${value?nf1.format(value):'—'}</td>`}).join('')}</tr>`}).join('');const head=`<tr><th>TURNO · ${metricLabel}</th>${days.map(d=>`<th class="prod-day-head"><b>${d.slice(8)}</b><small>${new Date(d+'T12:00:00Z').toLocaleDateString('pt-BR',{weekday:'short',timeZone:'UTC'}).toUpperCase()}</small></th>`).join('')}</tr>`;const explain=shiftMetric==='media'?'MÉDIA = soma de QTDEMBCONTADA do turno no dia ÷ todos os colaboradores do turno no quadro (quem não produziu conta como zero).':'SOMA = total de QTDEMBCONTADA de todos os colaboradores do turno no dia.';$('#view').innerHTML=`<div class="prod-metrics"><div class="field"><label>VISUALIZAÇÃO</label><div class="seg" id="shiftMetric"><button type="button" data-shift-metric="media" class="${shiftMetric==='media'?'on':''}">MÉDIA</button><button type="button" data-shift-metric="soma" class="${shiftMetric==='soma'?'on':''}">SOMA</button></div></div></div><div class="hint">${explain} Valores calculados pela produção individual associada a CODPRODUTIVO, agrupada por DTA CICLO. Ordem dos turnos: CD, 3 TURNO, 1 TURNO, 2 TURNO.</div><div class="prod-grid-wrap manager-wrap"><table class="prod-table manager-table"><thead>${head}</thead><tbody>${body}</tbody></table></div>`}
 function capacitySvg(series,label){const W=1400,H=390,L=62,R=24,T=25,B=50,PH=H-T-B,PW=W-L-R,max=Math.max(1,...series.flatMap(x=>[x.capacity,x.produced])),step=PW/Math.max(1,series.length),bw=Math.min(13,step*.24);let svg=`<svg class="capacity-chart-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Capacidade versus produção por dia"><text x="${L}" y="16" fill="var(--muted)" font-size="11">${esc(label)} · escala caixas</text>`;for(let i=0;i<=4;i++){const y=T+PH*i/4,val=Math.round(max*(1-i/4));svg+=`<line x1="${L}" y1="${y}" x2="${W-R}" y2="${y}" stroke="var(--line)"/><text x="${L-8}" y="${y+4}" fill="var(--muted)" font-size="10" text-anchor="end">${nf.format(val)}</text>`}series.forEach((x,i)=>{const cx=L+step*(i+.5),hc=x.capacity/max*PH,hp=x.produced/max*PH;svg+=`<g><title>${br(x.day)} · presentes ${x.present} · capacidade ${nf.format(x.capacity)} · produção ${nf.format(x.produced)}</title><rect x="${cx-bw-1}" y="${T+PH-hc}" width="${bw}" height="${hc}" rx="3" fill="#22d3ee"/><rect x="${cx+1}" y="${T+PH-hp}" width="${bw}" height="${hp}" rx="3" fill="#8b5cf6"/>`;if(series.length<=18){if(x.capacity)svg+=`<text x="${cx-bw/2-1}" y="${T+PH-hc-4}" fill="var(--muted)" font-size="8" text-anchor="middle">${nf.format(x.capacity)}</text>`;if(x.produced)svg+=`<text x="${cx+bw/2+1}" y="${T+PH-hp-4}" fill="var(--muted)" font-size="8" text-anchor="middle">${nf.format(x.produced)}</text>`}if(i%Math.max(1,Math.ceil(series.length/31))===0)svg+=`<text x="${cx}" y="${H-20}" fill="var(--muted)" font-size="9" text-anchor="middle">${x.day.slice(8)}</text>`;svg+='</g>'});svg+='</svg>';return svg}
 function renderCapacity(scope){const isManager=scope==='manager',groups=isManager?teamStats():['CD','3 TURNO','1 TURNO','2 TURNO'].map(key=>{const members=rosterPeople().filter(p=>shiftKey(p.turno)===key);return{name:key,members}}),choice=isManager?capManagerChoice:capShiftChoice,selectId=isManager?'capManagerSelect':'capShiftSelect';let selected=choice==='*'?groups:groups.filter(g=>g.name===choice);if(!selected.length){selected=groups; if(isManager)capManagerChoice='*';else capShiftChoice='*'}const sel=isManager?capManagerChoice:capShiftChoice;const idx=productionIndex(),series=days.map(day=>{let presentCount=0,produced=0;for(const g of selected)for(const p of g.members){if(isPresent(p.mat,day))presentCount++;produced+=productionFor(idx,p.mat,day).qty}return{day,present:presentCount,capacity:presentCount*800,produced}}),totalCapacity=series.reduce((a,x)=>a+x.capacity,0),totalProduced=series.reduce((a,x)=>a+x.produced,0),options=`<option value="*">${isManager?'Todos os gestores':'Todos os turnos'}</option>`+groups.map(g=>`<option value="${esc(g.name)}" ${sel===g.name?'selected':''}>${esc(g.name)}</option>`).join('');const title=isManager?'CAPACIDADE POR GESTOR':'CAPACIDADE POR TURNO',selectedLabel=sel==='*'?(isManager?'todos os gestores':'todos os turnos'):sel;$('#view').innerHTML=`<div class="capacity-toolbar"><div><div class="target-badge">CAPACIDADE = PRESENTES × 800 CAIXAS</div><div class="capacity-note">Presença conforme ABS_SURICATO e calendário operacional do ABS. Gestor, cargo e turno vêm do ABS_QUADRO/ABS_GESTOR_COLAB mais recente. A produção é a soma de QTDEMBCONTADA por DTA CICLO.</div></div><div class="field"><label>${isManager?'GESTOR DO GRÁFICO':'TURNO DO GRÁFICO'}</label><select id="${selectId}">${options}</select></div></div><div class="card capacity-chart-card"><h3>${title} · CAPACIDADE × PRODUÇÃO <em>${esc(selectedLabel)} · ${br(days[0])} a ${br(days[days.length-1])}</em></h3><div class="capacity-chart-wrap">${capacitySvg(series,title)}</div><div class="capacity-legend"><span><i style="background:#22d3ee"></i>Capacidade teórica (presentes × 800)</span><span><i style="background:#8b5cf6"></i>Produção realizada (QTDEMBCONTADA)</span></div><div class="hint">No período: capacidade acumulada ${nf.format(totalCapacity)} caixas · produção ${nf.format(totalProduced)} caixas · utilização ${totalCapacity?nf1.format(totalProduced/totalCapacity*100):'0,0'}%.</div></div>`}
 function render(){if(view==='macro')renderMacro();else if(view==='gestor')renderManager();else if(view==='turno')renderShift();else if(view==='capgestor')renderCapacity('manager');else if(view==='capturno')renderCapacity('shift');else renderTable()}
 
-async function loadRoster(){const lastUrl=new URL(`${URL_SB}/rest/v1/ABS_QUADRO`);lastUrl.searchParams.set('select','DTA');lastUrl.searchParams.set('order','DTA.desc');lastUrl.searchParams.set('limit','1');const r=await get(lastUrl);const newest=(await r.json())[0]?.DTA;if(!newest){roster=[];return}const snap=await readTable('ABS_QUADRO','*',{DTA:'eq.'+newest});const map=new Map();for(const x of snap){const mat=normMat(x.MATRICULA);if(!mat)continue;map.set(mat,{mat,nome:norm(x.NOME)||mat,cargo:norm(x.CARGO)||'—',turno:norm(x.TURNO)||'—',setor:norm(x.SETOR)||'—'})}roster=[...map.values()];const g=await readTable('ABS_GESTOR_COLAB','*').catch(()=>[]);managers=new Map();for(const x of g){const mat=normMat(x.COLABORADOR);if(mat)managers.set(mat,{nome:norm(x['NOME GESTOR'])||norm(x.GESTOR)||'Sem gestor',matGestor:normMat(x.GESTOR),setor:norm(x.SETOR)||'—'})}}
+async function loadRoster(){const lastUrl=new URL(`${URL_SB}/rest/v1/ABS_QUADRO`);lastUrl.searchParams.set('select','DTA');lastUrl.searchParams.set('order','DTA.desc');lastUrl.searchParams.set('limit','1');const r=await get(lastUrl);const newest=(await r.json())[0]?.DTA;if(!newest){roster=[];return}const snap=await readTable('ABS_QUADRO','*',{DTA:'eq.'+newest});const map=new Map();for(const x of snap){const mat=normMat(x.MATRICULA);if(!mat)continue;map.set(mat,{...x,mat,nome:norm(x.NOME)||mat,cargo:norm(x.CARGO)||'—',turno:norm(x.TURNO)||'—',setor:norm(x.SETOR)||'—'})}roster=[...map.values()];const g=await readTable('ABS_GESTOR_COLAB','*').catch(()=>[]);managers=new Map();for(const x of g){const mat=normMat(x.COLABORADOR);if(mat)managers.set(mat,{nome:norm(x['NOME GESTOR'])||norm(x.GESTOR)||'Sem gestor',matGestor:normMat(x.GESTOR),setor:norm(x.SETOR)||'—'})}}
 async function queryCycleMonth(y,m){const ds=dayList(y,m),serialValues=ds.map(d=>excelSerial(d)).join(','),brValues=ds.map(d=>`"${d.slice(8,10)}/${d.slice(5,7)}/${d.slice(0,4)}"`).join(','),isoValues=ds.map(d=>`"${d}"`).join(',');const [serialData,brData,isoData]=await Promise.all([readTable(TABLE,'*',{'DTA CICLO':`in.(${serialValues})`}),readTable(TABLE,'*',{'DTA CICLO':`in.(${brValues})`}).catch(()=>[]),readTable(TABLE,'*',{'DTA CICLO':`in.(${isoValues})`}).catch(()=>[])]);return [...serialData,...brData,...isoData]}
 async function latestCycleDate(){const a=await readTable(TABLE,'DTA CICLO');return a.map(x=>isoDate(x['DTA CICLO'])).filter(Boolean).sort().pop()||null}
-async function loadData(){month=$('#monthInput').value;presence=new Set();presenceMonth='';let {y,m}=monthBounds();days=dayList(y,m);const initial=firstMonthLoad;loading(true,'Carregando produtividade…','Lendo PLT_FECH por DTA CICLO (incluindo datas em serial Excel) e o quadro mais recente do ABS.');status('Consultando PLT_FECH…');try{const [data]=await Promise.all([queryCycleMonth(y,m),loadRoster()]);rows=data;let fallback=false;if(initial&&!rows.length){const latest=await latestCycleDate().catch(()=>null);if(latest&&latest.slice(0,7)!==month){month=latest.slice(0,7);$('#monthInput').value=month;({y,m}=monthBounds());days=dayList(y,m);rows=await queryCycleMonth(y,m);fallback=rows.length>0}}firstMonthLoad=false;fillFilters();if(['gestor','capgestor','capturno'].includes(view))await ensurePresence();$('#monthLabel').textContent=new Intl.DateTimeFormat('pt-BR',{month:'long',year:'numeric'}).format(new Date(Date.UTC(y,m-1,1,12))).toUpperCase();$('#pageSub').textContent=fallback?'Mês vigente sem lançamentos; exibindo o mês mais recente com dados. Nomes e caixas vêm de PLT_FECH (PRODUTIVO, QTDEMBCONTADA e DTA CICLO).':'Nomes da PLT_FECH.PRODUTIVO · caixas = soma de QTDEMBCONTADA por CODPRODUTIVO e DTA CICLO; média exclui fins de semana e feriados nacionais.';render();status(`${fallback?'Mês vigente sem dados · exibindo mês mais recente':'Dados carregados'} · ${nf.format(rows.length)} linhas PLT_FECH · ${nf.format(currentRows().length)} colaboradores com produção vinculados ao quadro`,'ok')}catch(e){firstMonthLoad=false;status('Falha ao carregar','err');$('#view').innerHTML=`<div class="err">Falha ao carregar dados: ${esc(e.message||e)}</div>`}finally{loading(false)}}
+async function loadData(){month=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit'}).format(new Date());$('#monthInput').value=month;presence=new Set();presenceMonth='';let {y,m}=monthBounds();days=dayList(y,m);const initial=firstMonthLoad;loading(true,'Carregando produtividade…','Lendo PLT_FECH por DTA CICLO (incluindo datas em serial Excel) e o quadro mais recente do ABS.');status('Consultando PLT_FECH…');try{const [data]=await Promise.all([queryCycleMonth(y,m),loadRoster()]);rows=data;let fallback=false;firstMonthLoad=false;fillFilters();if(['gestor','capgestor','capturno'].includes(view))await ensurePresence();$('#monthLabel').textContent=new Intl.DateTimeFormat('pt-BR',{month:'long',year:'numeric'}).format(new Date(Date.UTC(y,m-1,1,12))).toUpperCase();$('#pageSub').textContent=fallback?'Mês vigente sem lançamentos; exibindo o mês mais recente com dados. Nomes e caixas vêm de PLT_FECH (PRODUTIVO, QTDEMBCONTADA e DTA CICLO).':'Nomes da PLT_FECH.PRODUTIVO · caixas = soma de QTDEMBCONTADA por CODPRODUTIVO e DTA CICLO; média exclui fins de semana e feriados nacionais.';render();status(`${fallback?'Mês vigente sem dados · exibindo mês mais recente':'Dados carregados'} · ${nf.format(rows.length)} linhas PLT_FECH · ${nf.format(currentRows().length)} colaboradores com produção vinculados ao quadro`,'ok')}catch(e){firstMonthLoad=false;status('Falha ao carregar','err');$('#view').innerHTML=`<div class="err">Falha ao carregar dados: ${esc(e.message||e)}</div>`}finally{loading(false)}}
 const AUTH={ok:false,user:''};try{AUTH.ok=sessionStorage.getItem('abs-auth')==='1';AUTH.user=sessionStorage.getItem('abs-user')||''}catch{}
 async function checaLogin(mat,pass){for(const m of new Set([mat,normMat(mat)])){const u=new URL(`${URL_SB}/rest/v1/ABS_USER`);u.searchParams.set('select','USER');u.searchParams.set('USER','eq.'+m);u.searchParams.set('PASS','eq.'+pass);u.searchParams.set('limit','1');const r=await get(u);const a=await r.json();if(a.length)return true}return false}
-const VIDEO_LOGIN='https://pablomlopes797.github.io/INDICADORES_BRASIL/7020018_Particle_Dot_3840x2160.mp4';let bgVideoUrl='';async function startBgVideo(v){if(!v||v.dataset.started)return;v.dataset.started='1';const show=()=>{v.play().catch(()=>{});requestAnimationFrame(()=>v.classList.add('on'))};try{if(!bgVideoUrl){const r=await fetch(VIDEO_LOGIN);if(!r.ok)throw Error('HTTP '+r.status);bgVideoUrl=URL.createObjectURL(await r.blob())}v.addEventListener('canplay',show,{once:true});v.src=bgVideoUrl;v.load();if(v.readyState>=3)show()}catch(e){v.dataset.started='';v.addEventListener('canplaythrough',show,{once:true});v.src=VIDEO_LOGIN;v.load()}}function authApply(){$('#lg').hidden=AUTH.ok;$('#userBtn').hidden=!(AUTH.ok&&AUTH.user==='5520967');if(!AUTH.ok)startBgVideo($('#lgVideo'));else $('#lgVideo').pause()}
+const VIDEO_LOGIN='https://pablomlopes797.github.io/INDICADORES_BRASIL/7020018_Particle_Dot_3840x2160.mp4';let bgVideoUrl='';async function startBgVideo(v){if(!v||v.dataset.started)return;v.dataset.started='1';const show=()=>{v.play().catch(()=>{});requestAnimationFrame(()=>v.classList.add('on'))};try{if(!bgVideoUrl){const r=await fetch(VIDEO_LOGIN);if(!r.ok)throw Error('HTTP '+r.status);bgVideoUrl=URL.createObjectURL(await r.blob())}v.addEventListener('canplay',show,{once:true});v.src=bgVideoUrl;v.load();if(v.readyState>=3)show()}catch(e){v.dataset.started='';v.addEventListener('canplaythrough',show,{once:true});v.src=VIDEO_LOGIN;v.load()}}function authApply(){const isPrivileged=AUTH.ok&&normMat(AUTH.user)==='5520967';$('#lg').hidden=AUTH.ok;$('#userBtn').hidden=!isPrivileged;$('#resetDbBtn').hidden=!isPrivileged;if(!AUTH.ok)startBgVideo($('#lgVideo'));else $('#lgVideo').pause()}
 $('#lgForm').onsubmit=async e=>{e.preventDefault();const b=$('#lgBtn');b.disabled=true;b.textContent='VALIDANDO…';$('#lgErr').textContent='';try{if(await checaLogin(norm($('#lgUser').value),$('#lgPass').value)){AUTH.ok=true;AUTH.user=normMat($('#lgUser').value);try{sessionStorage.setItem('abs-auth','1');sessionStorage.setItem('abs-user',AUTH.user)}catch{}authApply();loadData()}else $('#lgErr').textContent='Matrícula ou senha inválida.'}catch(x){$('#lgErr').textContent='Falha ao validar: '+(x.message||x)}finally{b.disabled=false;b.textContent='ENTRAR'}};
 $('#logoutBtn').onclick=()=>{AUTH.ok=false;AUTH.user='';try{sessionStorage.removeItem('abs-auth');sessionStorage.removeItem('abs-user')}catch{}authApply()};authApply();
-$('#monthInput').value=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit'}).format(new Date());$('#reloadBtn').onclick=loadData;$('#monthInput').onchange=loadData;
+$('#resetDbBtn').onclick=async()=>{if(!AUTH.ok||normMat(AUTH.user)!=='5520967')return alert('Acesso não autorizado.');if(!confirm('ATENÇÃO: esta ação apagará somente os registros da tabela PLT_FECH. Não altera ABS_USER, ABS_QUADRO, ABS_GESTOR_COLAB nem qualquer outro endpoint de ABS. Deseja continuar?'))return;if(prompt('Para confirmar, digite exatamente: ZERAR PLT_FECH')!=='ZERAR PLT_FECH')return alert('Confirmação não corresponde. Nenhum dado foi apagado.');const b=$('#resetDbBtn');b.disabled=true;try{status('Limpando somente PLT_FECH…');for(const value of ['not.is.null','is.null']){const u=new URL(`${URL_SB}/rest/v1/${TABLE}`);u.searchParams.set('CODPRODUTIVO',value);const r=await fetch(u,{method:'DELETE',headers:{...headers(),Prefer:'return=minimal'}});if(!r.ok)throw Error(await apiError(r))}rows=[];presence=new Set();presenceMonth='';await loadData();alert('A operação de limpeza de PLT_FECH foi enviada. Confira o painel e a política de acesso do Supabase.')}catch(e){status('Falha/resultado parcial ao limpar PLT_FECH','err');alert('Não foi possível confirmar a limpeza completa de PLT_FECH: '+(e.message||e)+'. Verifique os dados antes de tentar novamente.')}finally{b.disabled=false}};
+$('#monthInput').value=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit'}).format(new Date());$('#monthInput').disabled=true;$('#reloadBtn').onclick=loadData;$('#monthInput').onchange=loadData;
 $('#tabs').onclick=async e=>{const b=e.target.closest('[data-view]');if(!b)return;view=b.dataset.view;$$('.tab').forEach(x=>x.classList.toggle('on',x===b));$('#pageTitle').textContent=({macro:'Macro · produtividade diária',tabela:'Produtividade · colaboradores × dia',gestor:'Produtividade média por gestor',turno:'Produção por turno',capgestor:'Capacidade diária por gestor',capturno:'Capacidade diária por turno'})[view]||'Produtividade';$('#pageSub').textContent=({macro:'Média diária, pico e evolução de caixas no período.',tabela:'Soma de QTDEMBCONTADA por colaborador e DTA CICLO.',gestor:'Média do time por dia; meta de 800 caixas por colaborador presente.',turno:'Produção diária somada por turno, na ordem operacional solicitada.',capgestor:'Presentes do ABS × 800 caixas comparados à produção, dia a dia.',capturno:'Presentes do ABS × 800 caixas comparados à produção por turno.'})[view]||'';try{if(['gestor','capgestor','capturno'].includes(view))await ensurePresence();render()}catch(x){status(x.message||x,'err');$('#view').innerHTML=`<div class="err">${esc(x.message||x)}</div>`}};
+// ===== OPÇÃO 3 · SINCRONIZAR DADOS COLADOS =====
+function parsePastedRows(text){
+const lines=String(text||'').split(/\r?\n/).map(l=>l.trim()).filter(l=>l.length);
+if(lines.length<2)throw Error('Cole o cabeçalho e pelo menos uma linha de dados.');
+
+const headerLine=lines[0];
+let delim='\t';
+const counts=[['\t',(headerLine.match(/\t/g)||[]).length],[';',(headerLine.match(/;/g)||[]).length],[',',(headerLine.match(/,/g)||[]).length]];
+counts.sort((a,b)=>b[1]-a[1]);
+if(counts[0][1]>0)delim=counts[0][0];
+
+const headers=csvLine(headerLine,delim).map(h=>normName(h).replace(/[^A-Z0-9]/g,''));
+const required=['DTACICLO','NROCARGA','SEQLOTE','SEQPRODUTO','CODPRODUTIVO','PRODUTIVO','QTDPESOBRUTO','QTDEMBCONTADA'];
+const missing=required.filter(h=>!headers.includes(h));
+if(missing.length)throw Error('Colunas obrigatórias ausentes no cabeçalho colado: '+missing.join(', '));
+
+const out=[];
+const seen=new Set();
+
+for(let i=1;i<lines.length;i++){
+const cells=csvLine(lines[i],delim);
+const raw={};
+headers.forEach((h,idx)=>raw[h]=cells[idx]??'');
+
+const cycle=isoDate(raw.DTACICLO);
+if(!cycle)throw Error('Linha '+(i+1)+': DTA CICLO inválida.');
+
+const load=Math.trunc(Number(raw.NROCARGA)||0);
+const lote=Math.trunc(Number(raw.SEQLOTE)||0);
+const produto=Math.trunc(Number(raw.SEQPRODUTO)||0);
+const mat=normMat(raw.CODPRODUTIVO);
+const prod=norm(raw.PRODUTIVO);
+
+if(!mat||!prod)throw Error('Linha '+(i+1)+': CODPRODUTIVO ou PRODUTIVO inválido.');
+
+const row={
+'DTA CICLO':cycle,
+NROCARGA:load,
+SEQLOTE:lote,
+SEQPRODUTO:produto,
+CODPRODUTIVO:mat,
+PRODUTIVO:prod,
+QTDPESOBRUTO:Math.round(Number(String(raw.QTDPESOBRUTO).replace(/\./g,'').replace(',','.'))||0),
+QTDEMBCONTADA:Math.trunc(Number(raw.QTDEMBCONTADA)||0)
+};
+
+const key=syncKey(row);
+if(seen.has(key))continue;
+seen.add(key);
+out.push(row);
+}
+
+if(!out.length)throw Error('Nenhuma linha válida foi encontrada nos dados colados.');
+return out;
+}
+
+$('#pasteSyncBtn').onclick=async()=>{
+const text=$('#pasteData').value;
+if(!norm(text))return baseStatus('Cole os dados antes de sincronizar.','warn');
+
+const rows=parsePastedRows(text);
+const cycles=[...new Set(rows.map(r=>r['DTA CICLO']))].sort();
+
+const syncStart=firstDayOfPreviousMonth();
+const syncEnd=hoje();
+const syncPeriods=buildSyncPeriods(syncStart,syncEnd);
+const periodText=syncPeriods.map((p,i)=>`${String(i+1).padStart(2,'0')}. ${br(p.start)} a ${br(p.end)}`).join('\n');
+
+const confirmMessage=
+`ANTES DE CONTINUAR, CONFIRME O DOWNLOAD DAS BASES CORRETAS.\n\n`+
+`A atualização considera o período de ${br(syncStart)} até ${br(syncEnd)}.\n\n`+
+`As bases TXT devem estar divididas nos seguintes períodos de 10 dias:\n\n${periodText}\n\n`+
+`Serão sincronizados somente os ciclos presentes nos dados colados:\n${cycles.map(br).join(', ')}\n\n`+
+`O Supabase será reconciliado com os dados colados:\n`+
+`• Novos registros serão inseridos.\n`+
+`• Registros existentes terão somente QTDPESOBRUTO e QTDEMBCONTADA atualizados, quando necessário.\n`+
+`• Registros dos ciclos colados que não existirem nos dados colados serão excluídos.\n`+
+`• Registros de outros ciclos não serão alterados.\n\n`+
+`Confirma que baixou todas as bases corretas do período?`;
+
+if(!confirm(confirmMessage)){
+baseStatus('Sincronização dos dados colados cancelada. Nenhum dado foi alterado.','warn');
+return;
+}
+
+const btn=$('#pasteSyncBtn');
+btn.disabled=true;
+let inserted=0,updated=0,same=0,removed=0,ambiguous=0;
+
+try{
+baseProgress(2,'Preparando sincronização dos dados colados…',true);
+await yieldUI();
+
+for(const cycle of cycles){
+const cycleRows=rows.filter(r=>r['DTA CICLO']===cycle);
+
+baseProgress(5,`Lendo registros existentes do ciclo ${br(cycle)}…`,true);
+const existingRows=await readCycleRows(cycle);
+
+const existingByKey=new Map();
+for(const row of existingRows){
+const key=syncKey(row);
+if(!existingByKey.has(key))existingByKey.set(key,[]);
+existingByKey.get(key).push(row);
+}
+
+const pastedByKey=new Map();
+for(const row of cycleRows){
+const key=syncKey(row);
+if(!pastedByKey.has(key))pastedByKey.set(key,[]);
+pastedByKey.get(key).push(row);
+}
+
+const inserts=[],updates=[],keysToDelete=[];
+
+for(const [key,pastedRows] of pastedByKey.entries()){
+const dbRows=existingByKey.get(key)||[];
+
+if(!dbRows.length){
+inserts.push(pastedRows[0]);
+continue;
+}
+
+if(dbRows.length>1){
+ambiguous++;
+continue;
+}
+
+const dbRow=dbRows[0];
+const pastedRow=pastedRows[0];
+
+if(syncValuesDiffer(dbRow,pastedRow)){
+updates.push({old:dbRow,next:pastedRow});
+}else{
+same++;
+}
+}
+
+for(const key of existingByKey.keys()){
+if(!pastedByKey.has(key))keysToDelete.push(key);
+}
+
+baseProgress(
+15,
+`Ciclo ${br(cycle)} · ${nf.format(inserts.length)} nova(s), ${nf.format(updates.length)} atualização(ões), ${nf.format(keysToDelete.length)} exclusão(ões)`,
+true
+);
+await yieldUI();
+
+await insertSyncRows(inserts);
+inserted+=inserts.length;
+
+await updateSyncRows(updates);
+updated+=updates.length;
+
+await deleteSyncRows(keysToDelete);
+removed+=keysToDelete.length;
+}
+
+baseProgress(100,'Sincronização dos dados colados concluída',false);
+
+baseStatus(
+`Sincronização dos dados colados concluída.\n\n`+
+`Ciclos sincronizados: ${cycles.map(br).join(', ')}.\n\n`+
+`Novos registros inseridos: ${nf.format(inserted)}\n`+
+`Registros atualizados (QTDPESOBRUTO e/ou QTDEMBCONTADA): ${nf.format(updated)}\n`+
+`Registros idênticos mantidos: ${nf.format(same)}\n`+
+`Registros removidos por não existirem nos dados colados: ${nf.format(removed)}\n`+
+`Chaves duplicadas no Supabase não alteradas: ${nf.format(ambiguous)}\n\n`+
+`Nenhum outro ciclo foi alterado.`,
+ambiguous?'warn':'ok'
+);
+
+$('#pasteData').value='';
+await loadData();
+
+}catch(e){
+baseProgress(100,'Sincronização interrompida',false);
+baseStatus('Falha na sincronização dos dados colados: '+(e.message||e),'err');
+}finally{
+btn.disabled=false;
+}
+};
+
+$('#pasteClearBtn').onclick=()=>{
+$('#pasteData').value='';
+baseStatus('Área de dados colados limpa.');
+};
+
 $('#themeBtn').onclick=()=>{const d=document.documentElement,light=d.dataset.theme!=='light';d.dataset.theme=light?'light':'dark';$('#themeBtn').textContent=light?'🌙 Modo escuro':'☀️ Modo claro'};
 function mostrarCreditoDesenvolvedor(){const el=$('#developerCredit');if(!el||el.dataset.started)return;el.dataset.started='1';const frag=document.createDocumentFragment();let idx=0;for(const word of 'DESENVOLVIDO POR PABLO MARTINS LOPES'.split(' ')){const w=document.createElement('span');w.className='dev-word';for(const ch of word){const c=document.createElement('span');c.className='dev-char';c.textContent=ch;c.style.setProperty('--delay',`${idx++*24}ms`);w.appendChild(c)}frag.appendChild(w)}el.replaceChildren(frag);requestAnimationFrame(()=>el.classList.add('show'))}setTimeout(mostrarCreditoDesenvolvedor,2000);
 $('#managerFilter').onchange=e=>{filterManager=e.target.value;render()};$('#shiftFilter').onchange=e=>{filterShift=e.target.value;render()};$('#clearFilters').onclick=()=>{$('#managerFilter').value='';$('#shiftFilter').value='';filterManager='';filterShift='';render()};
-$('#view').onclick=e=>{const m=e.target.closest('[data-metric]');if(m&&m.closest('#managerMetric')){managerMetric=m.dataset.metric;renderManager();return}const sm=e.target.closest('[data-shift-metric]');if(sm&&sm.closest('#shiftMetric')){shiftMetric=sm.dataset.shiftMetric;renderShift()}};$('#view').onchange=e=>{if(e.target.id==='capManagerSelect'){capManagerChoice=e.target.value;renderCapacity('manager')}if(e.target.id==='capShiftSelect'){capShiftChoice=e.target.value;renderCapacity('shift')}};$('#view').ondblclick=e=>{const c=e.target.closest('.manager-cell');if(c&&c.dataset.day)openTeamModal(c.dataset.manager,c.dataset.day)};$('#teamX').onclick=()=>$('#teamModal').hidden=true;$('#teamClose').onclick=()=>$('#teamModal').hidden=true;
+$('#view').onclick=e=>{const m=e.target.closest('[data-metric]');if(m&&m.closest('#managerMetric')){managerMetric=m.dataset.metric;renderManager();return}const sm=e.target.closest('[data-shift-metric]');if(sm&&sm.closest('#shiftMetric')){shiftMetric=sm.dataset.shiftMetric;renderShift()}};$('#view').onchange=e=>{if(e.target.id==='capManagerSelect'){capManagerChoice=e.target.value;renderCapacity('manager')}if(e.target.id==='capShiftSelect'){capShiftChoice=e.target.value;renderCapacity('shift')}};$('#view').onclick=e=>{const m=e.target.closest('[data-metric]');if(m&&m.closest('#managerMetric')){managerMetric=m.dataset.metric;renderManager();return}const sm=e.target.closest('[data-shift-metric]');if(sm&&sm.closest('#shiftMetric')){shiftMetric=sm.dataset.shiftMetric;renderShift();return}const cell=e.target.closest('.manager-cell:not(.shift-cell)');if(cell&&cell.dataset.day)openTeamModal(cell.dataset.manager,cell.dataset.day)};$('#view').ondblclick=e=>{const c=e.target.closest('.shift-cell');if(c&&c.dataset.day)openTeamModal(c.dataset.shift,c.dataset.day,'shift')};$('#view').oninput=e=>{if(e.target.id==='peopleSearch'){const pos=e.target.selectionStart;peopleSearch=e.target.value;renderTable();const next=$('#peopleSearch');next.focus();next.setSelectionRange(pos,pos)}};$('#teamX').onclick=()=>$('#teamModal').hidden=true;$('#teamClose').onclick=()=>$('#teamModal').hidden=true;
 // Usuários: mesmo ABS_USER e CRUD limitado ao usuário 5520967.
 let users=[],editing='';const umMsg=(t,c)=>{const x=$('#umMsg');x.className='jm-msg '+c;x.hidden=false;x.textContent=t};function resetUser(){editing='';$('#umMat').disabled=false;$('#umMat').value='';$('#umName').value='';$('#umLevel').value='2';$('#umPass').value='';$('#umPassHint').textContent='(obrigatória ao cadastrar)';$('#umSalva').textContent='Cadastrar usuário';$('#umMsg').hidden=true}
 function renderUsers(){const q=normName($('#umBusca').value);$('#umRows').innerHTML=users.filter(u=>!q||normName(u.USER).includes(q)||normName(u.NAME).includes(q)).map(u=>`<tr><td>${esc(u.USER)}</td><td>${esc(u.NAME||'—')}</td><td>${esc(u.LEVEL??'—')}</td><td><button class="btn sm" data-edit="${esc(u.USER)}" type="button">Editar</button> <button class="btn sm" data-del="${esc(u.USER)}" type="button">Apagar</button></td></tr>`).join('')||'<tr><td colspan="4">Nenhum usuário.</td></tr>'}
@@ -480,12 +682,13 @@ $('#userBtn').onclick=async()=>{if(AUTH.user!=='5520967')return;resetUser();$('#
 $('#umRows').onclick=async e=>{const edit=e.target.closest('[data-edit]'),del=e.target.closest('[data-del]');if(edit){const x=users.find(u=>normMat(u.USER)===normMat(edit.dataset.edit));if(!x)return;editing=normMat(x.USER);$('#umMat').value=x.USER;$('#umMat').disabled=true;$('#umName').value=x.NAME||'';$('#umLevel').value=String(x.LEVEL||2);$('#umPass').value='';$('#umPassHint').textContent='(opcional; em branco mantém a senha atual)';$('#umSalva').textContent='Salvar alterações';$('#umMsg').hidden=true;return}if(del&&AUTH.user==='5520967'){const mat=normMat(del.dataset.del);if(!confirm(`Apagar usuário ${mat}?`))return;try{const u=new URL(`${URL_SB}/rest/v1/ABS_USER`);u.searchParams.set('USER','eq.'+mat);const r=await fetch(u,{method:'DELETE',headers:{...headers(),Prefer:'return=minimal'}});if(!r.ok)throw Error(await apiError(r));users=users.filter(x=>normMat(x.USER)!==mat);renderUsers();umMsg(`Usuário ${mat} apagado.`,'ok')}catch(x){umMsg('Falha ao apagar: '+x.message,'err')}}};
 $('#umSalva').onclick=async()=>{if(AUTH.user!=='5520967')return umMsg('Acesso não autorizado.','err');const mat=normMat($('#umMat').value),name=norm($('#umName').value),pass=$('#umPass').value,level=Number($('#umLevel').value),b=$('#umSalva');if(!/^\d+$/.test(mat)||!name||![1,2,3].includes(level))return umMsg('Preencha matrícula, nome e nível válido.','err');if(!editing&&pass.length<4||pass&&pass.length<4)return umMsg('Senha deve possuir ao menos 4 caracteres.','err');b.disabled=true;try{let u=new URL(`${URL_SB}/rest/v1/ABS_USER`),r;if(editing){u.searchParams.set('USER','eq.'+editing);const body={NAME:name,LEVEL:level};if(pass)body.PASS=pass;r=await fetch(u,{method:'PATCH',headers:{...headers(),Prefer:'return=representation','Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw Error(await apiError(r));if(!(await r.json()).length)throw Error('Nenhum usuário atualizado')}else{if(users.some(x=>normMat(x.USER)===mat))return umMsg('Matrícula já cadastrada.','err');r=await fetch(u,{method:'POST',headers:{...headers(),Prefer:'return=minimal','Content-Type':'application/json'},body:JSON.stringify([{USER:mat,NAME:name,PASS:pass,LEVEL:level}])});if(!r.ok)throw Error(await apiError(r))}await loadUsers();umMsg(`Usuário ${mat} salvo.`,'ok');resetUser()}catch(x){umMsg('Falha: '+x.message,'err')}finally{b.disabled=false}};
 // TXT processing inspired by the attached Power Query.
-function csvLine(line,delim){const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'&&q&&line[i+1]==='"'){cur+='"';i++}else if(c==='"')q=!q;else if(c===delim&&!q){out.push(cur);cur=''}else cur+=c}out.push(cur);return out.map(x=>x.trim())}
+function csvLine(line,delim){const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'&&q&&line[i+1]==='"'){cur+='"';i++}else if(c==='"')q=!q;else if(c===delim&&!q){out.push(cur);cur=''}else cur+=c}out.push(cur);return out}
 function detectDelim(line){const opts=['\t','|',';',','];return opts.map(d=>({d,n:d==='\t'?[...line].filter(c=>c==='\t').length:line.split(d).length-1})).sort((a,b)=>b.n-a.n)[0].d}
 function decimal(v){let s=norm(v).replace(/[^0-9,.-]/g,'');if(s.includes(',')&&s.includes('.'))s=s.lastIndexOf(',')>s.lastIndexOf('.')?s.replace(/\./g,'').replace(',','.'):s.replace(/,/g,'');else if(s.includes(','))s=s.replace(',','.');const n=Number(s);return Number.isFinite(n)?n:0}
-function dateTimeRaw(v){let s=norm(v).replace(/[T]/,' ');const date=isoDate(s);if(!date)return null;let tm=s.match(/(?:\s|^)(\d{1,2})[:.](\d{2})(?::(\d{2}))?/);let hh=tm?+tm[1]:0,mi=tm?+tm[2]:0,ss=tm?+tm[3]||0:0;if(hh>23||mi>59)return null;return{date,hh,mi,ss,time:`${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}`,stamp:`${date}T${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}:${String(ss).padStart(2,'0')}-03:00`}}
+function roundPowerQuery(n){const lo=Math.floor(n),frac=n-lo;if(frac<.5)return lo;if(frac>.5)return lo+1;return lo%2===0?lo:lo+1}
+function dateTimeRaw(v){let s=norm(v).replace(/[T]/,' ');const date=isoDate(s);if(!date)return null;let tm=s.match(/(?:\s|^)(\d{1,2})[:.](\d{2})(?::(\d{2}))?/);let hh=tm?+tm[1]:0,mi=tm?+tm[2]:0,ss=tm?+tm[3]||0:0;if(hh>23||mi>59)return null;return{date,hh,mi,ss,time:`${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}`,stamp:`${date}T${String(hh).padStart(2,'0')}:${String(mi).padStart(2,'0')}:00-03:00`}}
 function normalizeSource(headers,row){const o={};headers.forEach((h,i)=>o[normName(h).replace(/\s+/g,'')]=row[i]??'');return o}
-async function transformTxt(text,file,onProgress=()=>{},cycleFilter=''){text=text.replace(/^\uFEFF/,'');const lines=text.split(/\r?\n/);let first=0;while(first<lines.length&&!lines[first].trim())first++;if(lines.length-first<2)return{rows:[],skip:0,errors:[file+': sem linhas de dados'],errorCount:1};const delim=detectDelim(lines[first]);const hs=csvLine(lines[first],delim).map(h=>normName(h).replace(/\s+/g,''));const headersExpected=['NROCARGA','SEQLOTE','SEQPRODUTO','CODPRODUTIVO','PRODUTIVO','QTDPESOBRUTO','QTDEMBCONTADA'];if(!headersExpected.some(h=>hs.includes(h)))return{rows:[],skip:0,errors:[file+': não identifiquei os cabeçalhos de PLTFECHADO/PRODUTIVO; confira se o TXT tem cabeçalho.'],errorCount:1};const outMap=new Map(),errors=[];let inputDuplicates=0,inputConflicts=0,skipped=0,skippedClosed=0,skippedBilling=0,skippedCycle=0,errorCount=0,processed=0;const closedSamples=new Set(),total=lines.length-first-1;for(let start=first+1;start<lines.length;start+=5000){const end=Math.min(lines.length,start+5000);for(let i=start;i<end;i++){if(!lines[i].trim())continue;processed++;try{const raw=normalizeSource(hs,csvLine(lines[i],delim));if(Object.prototype.hasOwnProperty.call(raw,'PLTFECHADO')&&normName(raw.PLTFECHADO)!=='NAO'){skipped++;skippedClosed++;if(closedSamples.size<5)closedSamples.add(norm(raw.PLTFECHADO)||'(vazio)');continue}if(raw.DTAHORFATURAMENTO!==undefined&&!norm(raw.DTAHORFATURAMENTO)){skipped++;skippedBilling++;continue}const dtr=dateTimeRaw(raw.DTAHORFIMTAREFA||raw['DTA REAL']||raw.DTAREAL);if(!dtr){errorCount++;if(errors.length<100)errors.push(`${file}: linha ${i+1} sem data/hora válida em DTAHORFIMTAREFA`);continue}const cyc=new Date(Date.UTC(+dtr.date.slice(0,4),+dtr.date.slice(5,7)-1,+dtr.date.slice(8,10)+(dtr.hh>=22?1:0))).toISOString().slice(0,10);if(cycleFilter&&cyc!==cycleFilter){skipped++;skippedCycle++;continue}const prod=norm(raw.PRODUTIVO),mat=normMat(raw.CODPRODUTIVO);if(!mat||!prod){errorCount++;if(errors.length<100)errors.push(`${file}: linha ${i+1} sem CODPRODUTIVO ou PRODUTIVO`);continue}const transformed={'DTA REAL':dtr.stamp,'DTA CICLO':cyc,NROCARGA:Math.trunc(decimal(raw.NROCARGA)),SEQLOTE:Math.trunc(decimal(raw.SEQLOTE)),SEQPRODUTO:Math.trunc(decimal(raw.SEQPRODUTO)),CODPRODUTIVO:mat,PRODUTIVO:prod,QTDPESOBRUTO:decimal(raw.QTDPESOBRUTO),QTDEMBCONTADA:Math.trunc(decimal(raw.QTDEMBCONTADA))},naturalKey=keyRow(transformed),previous=outMap.get(naturalKey);if(previous){inputDuplicates++;if(!sameParsedRow(previous,transformed))inputConflicts++}outMap.set(naturalKey,transformed)}catch(e){errorCount++;if(errors.length<100)errors.push(`${file}: linha ${i+1}: ${e.message}`)}}onProgress(processed,total);await new Promise(resolve=>setTimeout(resolve,0))}return{rows:[...outMap.values()],inputDuplicates,inputConflicts,skip:skipped,skipClosed:skippedClosed,skipBilling:skippedBilling,skipCycle:skippedCycle,closedSamples:[...closedSamples],errors,errorCount}}
+async function transformTxt(text,file,onProgress=()=>{},cycleFilter=''){text=text.replace(/^\uFEFF/,'');const lines=text.split(/\r?\n/);let first=0;while(first<lines.length&&!lines[first].trim())first++;if(lines.length-first<2)return{rows:[],skip:0,errors:[file+': sem linhas de dados'],errorCount:1};const delim=detectDelim(lines[first]);const hs=csvLine(lines[first],delim).map(h=>normName(h).replace(/\s+/g,''));const headersExpected=['PLTFECHADO','DTAHORFATURAMENTO','DTAHORFIMTAREFA','NROCARGA','SEQLOTE','SEQPRODUTO','CODPRODUTIVO','PRODUTIVO','QTDPESOBRUTO','QTDEMBCONTADA'];if(!headersExpected.some(h=>hs.includes(h)))return{rows:[],skip:0,errors:[file+': não identifiquei os cabeçalhos de PLTFECHADO/PRODUTIVO; confira se o TXT tem cabeçalho.'],errorCount:1};const outMap=new Map(),errors=[];let inputDuplicates=0,inputConflicts=0,skipped=0,skippedClosed=0,skippedBilling=0,skippedCycle=0,errorCount=0,processed=0;const closedSamples=new Set(),total=lines.length-first-1;for(let start=first+1;start<lines.length;start+=5000){const end=Math.min(lines.length,start+5000);for(let i=start;i<end;i++){if(!lines[i].trim())continue;processed++;try{const raw=normalizeSource(hs,csvLine(lines[i],delim));if(!Object.prototype.hasOwnProperty.call(raw,'PLTFECHADO')||raw.PLTFECHADO!=='NÃO'){skipped++;skippedClosed++;if(closedSamples.size<5)closedSamples.add(norm(raw.PLTFECHADO)||'(vazio)');continue}if(!Object.prototype.hasOwnProperty.call(raw,'DTAHORFATURAMENTO')||raw.DTAHORFATURAMENTO===null||raw.DTAHORFATURAMENTO===''){ skipped++;skippedBilling++;continue}const finish=raw.DTAHORFIMTAREFA;if(finish===undefined||finish===null||finish===''){skipped++;continue}const dtr=dateTimeRaw(finish);if(!dtr){errorCount++;if(errors.length<100)errors.push(`${file}: linha ${i+1} sem data/hora válida em DTAHORFIMTAREFA`);continue}const cyc=new Date(Date.UTC(+dtr.date.slice(0,4),+dtr.date.slice(5,7)-1,+dtr.date.slice(8,10)+(dtr.hh>=22?1:0))).toISOString().slice(0,10);if(cycleFilter&&cyc!==cycleFilter){skipped++;skippedCycle++;continue}const prod=String(raw.PRODUTIVO??''),mat=normMat(raw.CODPRODUTIVO);if(!mat||!prod){errorCount++;if(errors.length<100)errors.push(`${file}: linha ${i+1} sem CODPRODUTIVO ou PRODUTIVO`);continue}const transformed={'DTA CICLO':cyc,NROCARGA:Math.trunc(decimal(raw.NROCARGA)),SEQLOTE:Math.trunc(decimal(raw.SEQLOTE)),SEQPRODUTO:Math.trunc(decimal(raw.SEQPRODUTO)),CODPRODUTIVO:mat,PRODUTIVO:prod,QTDPESOBRUTO:roundPowerQuery(decimal(raw.QTDPESOBRUTO)),QTDEMBCONTADA:Math.trunc(decimal(raw.QTDEMBCONTADA))},naturalKey=sourceKeyRow(transformed,`${dtr.date}T${dtr.time}:00`),previous=outMap.get(naturalKey);if(previous){inputDuplicates++;if(!sameParsedRow(previous,transformed))inputConflicts++}Object.defineProperty(transformed,'__sourceKey',{value:naturalKey,enumerable:false});if(!previous)outMap.set(naturalKey,transformed)}catch(e){errorCount++;if(errors.length<100)errors.push(`${file}: linha ${i+1}: ${e.message}`)}}onProgress(processed,total);await new Promise(resolve=>setTimeout(resolve,0))}return{rows:[...outMap.values()],inputDuplicates,inputConflicts,skip:skipped,skipClosed:skippedClosed,skipBilling:skippedBilling,skipCycle:skippedCycle,closedSamples:[...closedSamples],errors,errorCount}}
 function delimFor(file,text){return detectDelim(text.split(/\r?\n/)[0]||'\t')}
 const $status=$('#baseStatus');function baseStatus(text,kind=''){ $status.className='base-status '+kind;$status.textContent=text }
 function baseProgress(pct,label,busy=false){const box=$('#baseProgress'),fill=$('#baseProgressFill'),track=$('#baseProgressTrack');box.hidden=false;const n=Math.max(0,Math.min(100,Math.round(pct)));fill.style.width=n+'%';$('#baseProgressPct').textContent=n+'%';$('#baseProgressLabel').textContent=label;track.setAttribute('aria-valuenow',String(n));track.classList.toggle('busy',busy)}
@@ -497,17 +700,271 @@ function readFileTextProgress(file,onProgress){return new Promise((resolve,rejec
 $('#basesBtn').onclick=()=>{if(!cycleDateManual)$('#cycleDateFilter').value=currentOperationalCycle();$('#basesModal').hidden=false};const closeBases=()=>$('#basesModal').hidden=true;$('#basesX').onclick=closeBases;$('#basesClose').onclick=closeBases;
 $('#dropZone').ondragover=e=>{e.preventDefault();$('#dropZone').classList.add('drag')};$('#dropZone').ondragleave=()=>$('#dropZone').classList.remove('drag');$('#dropZone').ondrop=e=>{e.preventDefault();$('#dropZone').classList.remove('drag');selectedFiles=[...e.dataTransfer.files].filter(f=>f.name.toLowerCase().endsWith('.txt'));fileRows=[];analyzedCycleFilter='';analyzedInputDuplicates=0;analyzedInputConflicts=0;$('#importBtn').disabled=true;resetBaseProgress();baseStatus(`${selectedFiles.length} arquivo(s) selecionado(s). Clique em Analisar arquivos para DTA CICLO ${$('#cycleDateFilter').value||'selecionado'}.`)};$('#txtFiles').onchange=e=>{selectedFiles=[...e.target.files].filter(f=>f.name.toLowerCase().endsWith('.txt'));fileRows=[];analyzedCycleFilter='';analyzedInputDuplicates=0;analyzedInputConflicts=0;$('#importBtn').disabled=true;resetBaseProgress();baseStatus(`${selectedFiles.length} arquivo(s) selecionado(s). Clique em Analisar arquivos para DTA CICLO ${$('#cycleDateFilter').value||'selecionado'}.`)};
 $('#cycleDateFilter').onchange=()=>{cycleDateManual=true;fileRows=[];analyzedCycleFilter='';analyzedInputDuplicates=0;analyzedInputConflicts=0;$('#importBtn').disabled=true;resetBaseProgress();baseStatus(`Ciclo selecionado: ${$('#cycleDateFilter').value||'—'}. Analise os TXT novamente antes de importar.`,'warn')};
-$('#analyzeBtn').onclick=async()=>{if(!selectedFiles.length)return baseStatus('Selecione ou arraste ao menos um TXT.','warn');const cycleFilter=$('#cycleDateFilter').value;if(!cycleFilter)return baseStatus('Selecione a data de DTA CICLO antes de analisar.','warn');const analyze=$('#analyzeBtn'),imp=$('#importBtn');analyze.disabled=true;imp.disabled=true;fileRows=[];analyzedCycleFilter='';analyzedInputDuplicates=0;analyzedInputConflicts=0;let inputDuplicates=0,inputConflicts=0,skipped=0,skippedClosed=0,skippedBilling=0,skippedCycle=0,errorCount=0;const sourceUnique=new Map(),errs=[],closedSamples=new Set(),fileTotal=selectedFiles.length;try{let readRows=0;for(let fi=0;fi<fileTotal;fi++){const f=selectedFiles[fi];baseProgress(3+52*fi/fileTotal,`Lendo arquivo ${fi+1}/${fileTotal}: ${f.name} · ${nf1.format(f.size/1048576)} MB`,true);const text=await readFileTextProgress(f,ratio=>baseProgress(3+52*(fi+ratio)/fileTotal,`Lendo arquivo ${fi+1}/${fileTotal}: ${f.name} · ${Math.round(ratio*100)}%`,true));const r=await transformTxt(text,f.name,(done,total)=>baseProgress(3+52*(fi+Math.min(1,done/Math.max(1,total)))/fileTotal,`Filtrando DTA CICLO ${cycleFilter} · ${f.name} · ${nf.format(done)} / ${nf.format(total)}`,true),cycleFilter);for(let ri=0;ri<r.rows.length;ri++){const row=r.rows[ri],k=keyRow(row),previous=sourceUnique.get(k);if(previous){inputDuplicates++;if(!sameParsedRow(previous,row))inputConflicts++}sourceUnique.set(k,row);if(ri%10000===0){baseProgress(55+40*((fi+ri/Math.max(1,r.rows.length))/fileTotal),`Conferindo duplicatas entre arquivos · ${nf.format(ri)} / ${nf.format(r.rows.length)} · ${f.name}`,true);await yieldUI()}}inputDuplicates+=r.inputDuplicates||0;inputConflicts+=r.inputConflicts||0;readRows+=r.rows.length;skipped+=r.skip;skippedClosed+=r.skipClosed||0;skippedBilling+=r.skipBilling||0;skippedCycle+=r.skipCycle||0;for(const x of r.closedSamples||[])if(closedSamples.size<5)closedSamples.add(x);errorCount+=r.errorCount??r.errors.length;errs.push(...r.errors);await yieldUI()}fileRows=Array.from(sourceUnique.values());analyzedCycleFilter=cycleFilter;analyzedInputDuplicates=inputDuplicates;analyzedInputConflicts=inputConflicts;imp.disabled=!fileRows.length;baseProgress(100,`Análise concluída · ${nf.format(fileRows.length)} linha(s) únicas prontas`,false);baseStatus(`Análise concluída: ${fileTotal} arquivo(s), ${nf.format(fileRows.length)} linha(s) únicas prontas, ${nf.format(inputDuplicates)} duplicata(s) removida(s) do(s) TXT (${nf.format(inputConflicts)} com conteúdo divergente; prevaleceu a última linha), ${nf.format(skipped)} filtrada(s) [fora de DTA CICLO ${cycleFilter}: ${nf.format(skippedCycle)}; PLTFECHADO diferente de NÃO: ${nf.format(skippedClosed)}; sem DTAHORFATURAMENTO: ${nf.format(skippedBilling)}], ${nf.format(errorCount)} erro(s).${closedSamples.size?' Valores PLTFECHADO lidos: '+[...closedSamples].join(', ')+'.':''}${errs.length?' Erros: '+errs.slice(0,20).join(' · '):''}`,errorCount||skipped?'warn':'ok')}catch(e){baseProgress(100,'Falha durante a análise',false);baseStatus('Falha na análise: '+(e.message||e),'err')}finally{analyze.disabled=false}};
-$('#importBtn').onclick=async()=>{if(!fileRows.length)return;const cycleFilter=analyzedCycleFilter;if(!cycleFilter||cycleFilter!==$('#cycleDateFilter').value)return baseStatus('A data do ciclo mudou ou não está associada à análise. Analise os TXT novamente.','warn');const b=$('#importBtn'),analyze=$('#analyzeBtn');b.disabled=true;analyze.disabled=true;let inserted=0,updated=0,same=0,ambiguous=0;try{baseProgress(1,'Preparando consulta à base…',true);await yieldUI();const dates=fileRows.map(r=>isoDate(r['DTA CICLO'])).filter(Boolean);if(!dates.length)throw Error('Nenhuma data de ciclo válida para importar');const dateSet=[...new Set(dates)],brList=dateSet.map(d=>`"${d.slice(8,10)}/${d.slice(5,7)}/${d.slice(0,4)}"`).join(','),isoList=dateSet.map(d=>`"${d}"`).join(',');let pageDone=0,pageTotal=NaN,readPct=10;const reportRead=(n,total)=>{pageDone+=1000;if(Number.isFinite(total))pageTotal=total;const pct=Number.isFinite(pageTotal)&&pageTotal>0?10+20*Math.min(1,n/pageTotal):Math.min(29,10+Math.ceil(pageDone/1000));readPct=Math.max(readPct,pct);baseProgress(readPct,`Comparando com PLT_FECH · ${nf.format(n)} registro(s) lidos${Number.isFinite(pageTotal)?' de '+nf.format(pageTotal):''}`,true)};const selectExisting='"DTA REAL","DTA CICLO",NROCARGA,SEQLOTE,SEQPRODUTO,CODPRODUTIVO,PRODUTIVO,QTDPESOBRUTO,QTDEMBCONTADA';const serialList=dateSet.map(excelSerial).join(',');const [oldBr,oldIso,oldSerial]=await Promise.all([readTable(TABLE,selectExisting,{'DTA CICLO':`in.(${brList})`},'',reportRead),readTable(TABLE,selectExisting,{'DTA CICLO':`in.(${isoList})`},'',reportRead),readTable(TABLE,selectExisting,{'DTA CICLO':`in.(${serialList})`},'',reportRead)]);const existing=oldBr.concat(oldIso,oldSerial),ix=new Map();for(let i=0;i<existing.length;i+=5000){for(const r of existing.slice(i,i+5000)){const k=keyRow(r);if(!ix.has(k))ix.set(k,[]);ix.get(k).push(r)}baseProgress(30+8*Math.min(1,(i+5000)/Math.max(1,existing.length)),`Indexando registros existentes · ${nf.format(Math.min(i+5000,existing.length))} / ${nf.format(existing.length)}`,true);await yieldUI()}const inserts=[],updates=[];for(let i=0;i<fileRows.length;i++){const r=fileRows[i],found=ix.get(keyRow(r))||[];if(!found.length)inserts.push(r);else if(found.length>1)ambiguous++;else if(sameRow(found[0],r))same++;else updates.push({next:r,old:found[0]});if(i%5000===0){baseProgress(38+7*(i/Math.max(1,fileRows.length)),`Preparando alterações · ${nf.format(i)} / ${nf.format(fileRows.length)}`,true);await yieldUI()}}const batchSize=1500,totalBatches=Math.ceil(inserts.length/batchSize),uploadConcurrency=10;const batches=Array.from({length:totalBatches},(_,n)=>inserts.slice(n*batchSize,(n+1)*batchSize));let insertedDone=0;for(let i=0;i<batches.length;i+=uploadConcurrency){const group=batches.slice(i,i+uploadConcurrency);const counts=await Promise.all(group.map(async(batch,j)=>{const batchNo=i+j+1,resp=await fetch(`${URL_SB}/rest/v1/${TABLE}`,{method:'POST',headers:{...headers(),Prefer:'return=minimal','Content-Type':'application/json'},body:JSON.stringify(batch)});if(!resp.ok)throw Error('Falha ao inserir lote '+batchNo+': '+await apiError(resp));return batch.length}));insertedDone+=counts.reduce((a,n)=>a+n,0);inserted=insertedDone;baseProgress(45+35*(inserted/Math.max(1,inserts.length)),`Inserindo em paralelo · ${nf.format(inserted)} / ${nf.format(inserts.length)} linha(s) · ${Math.min(i+uploadConcurrency,batches.length)} / ${batches.length} lotes`,true);await yieldUI()}let updatedDone=0;const concurrency=8;for(let i=0;i<updates.length;i+=concurrency){const group=updates.slice(i,i+concurrency);const results=await Promise.all(group.map(async item=>{const resp=await fetch(patchUrl(item.old),{method:'PATCH',headers:{...headers(),Prefer:'return=representation','Content-Type':'application/json'},body:JSON.stringify(item.next)});if(!resp.ok)throw Error('Falha ao atualizar '+item.next.NROCARGA+': '+await apiError(resp));const changed=await resp.json();if(!Array.isArray(changed)||!changed.length)throw Error('Nenhuma linha atualizada para a chave '+keyRow(item.next));return true}));updatedDone+=results.length;updated=updatedDone;baseProgress(80+18*(updatedDone/Math.max(1,updates.length)),`Atualizando linhas alteradas · ${nf.format(updatedDone)} / ${nf.format(updates.length)}`,true);await yieldUI()}baseProgress(100,'Importação concluída',false);baseStatus(`Ciclo ${cycleFilter} · importação concluída.\nInseridas: ${inserted}\nAtualizadas: ${updated}\nIdênticas no Supabase ignoradas: ${same}\nDuplicatas removidas dos TXT: ${analyzedInputDuplicates} (${analyzedInputConflicts} com conteúdo divergente; prevaleceu a última linha)\nAmbíguas no Supabase (mais de um registro com a mesma chave; não alteradas): ${ambiguous}`,ambiguous?'warn':'ok');await loadData()}catch(e){baseProgress(100,'Importação interrompida',false);baseStatus('Falha na importação: '+(e.message||e),'err')}finally{b.disabled=false;analyze.disabled=false}};
-function canonicalInstant(v){const s=norm(v);if(s.endsWith('-03:00')&&s.length>=25)return s.slice(0,19);if(/[zZ]|[+-]\d{2}:?\d{2}$/.test(s)){const t=Date.parse(s);if(Number.isFinite(t)){const p=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).formatToParts(new Date(t)).reduce((o,x)=>(o[x.type]=x.value,o),{});return `${p.year}-${p.month}-${p.day}T${p.hour}:${p.minute}:${p.second}`}}const d=dateTimeRaw(s);return d?`${d.date}T${d.time}:${String(d.ss||0).padStart(2,'0')}`:norm(s)}
-function canonicalValue(k,v){if(k==='DTA CICLO')return isoDate(v)||norm(v);if(k==='DTA REAL')return canonicalInstant(v);if(['NROCARGA','SEQLOTE','SEQPRODUTO','QTDEMBCONTADA'].includes(k))return Number(v)||0;if(k==='QTDPESOBRUTO')return Math.round((Number(v)||0)*1000000)/1000000;if(k==='CODPRODUTIVO')return normMat(v);return norm(v)}
-function keyRow(r){return ['DTA REAL','DTA CICLO','NROCARGA','SEQLOTE','SEQPRODUTO','CODPRODUTIVO'].map(k=>canonicalValue(k,r[k])).join('|')}
+$('#analyzeBtn').onclick=async()=>{if(!selectedFiles.length)return baseStatus('Selecione ou arraste ao menos um TXT.','warn');const cycleFilter=$('#cycleDateFilter').value;if(!cycleFilter)return baseStatus('Selecione a data de DTA CICLO antes de analisar.','warn');const analyze=$('#analyzeBtn'),imp=$('#importBtn');analyze.disabled=true;imp.disabled=true;fileRows=[];analyzedCycleFilter='';analyzedInputDuplicates=0;analyzedInputConflicts=0;let inputDuplicates=0,inputConflicts=0,skipped=0,skippedClosed=0,skippedBilling=0,skippedCycle=0,errorCount=0;const sourceUnique=new Map(),errs=[],closedSamples=new Set(),fileTotal=selectedFiles.length;try{let readRows=0;for(let fi=0;fi<fileTotal;fi++){const f=selectedFiles[fi];baseProgress(3+52*fi/fileTotal,`Lendo arquivo ${fi+1}/${fileTotal}: ${f.name} · ${nf1.format(f.size/1048576)} MB`,true);const text=await readFileTextProgress(f,ratio=>baseProgress(3+52*(fi+ratio)/fileTotal,`Lendo arquivo ${fi+1}/${fileTotal}: ${f.name} · ${Math.round(ratio*100)}%`,true));const r=await transformTxt(text,f.name,(done,total)=>baseProgress(3+52*(fi+Math.min(1,done/Math.max(1,total)))/fileTotal,`Filtrando DTA CICLO ${cycleFilter} · ${f.name} · ${nf.format(done)} / ${nf.format(total)}`,true),cycleFilter);for(let ri=0;ri<r.rows.length;ri++){const row=r.rows[ri],k=row.__sourceKey||keyRow(row),previous=sourceUnique.get(k);if(previous){inputDuplicates++;if(!sameParsedRow(previous,row))inputConflicts++}if(!previous)sourceUnique.set(k,row);if(ri%10000===0){baseProgress(55+40*((fi+ri/Math.max(1,r.rows.length))/fileTotal),`Conferindo duplicatas entre arquivos · ${nf.format(ri)} / ${nf.format(r.rows.length)} · ${f.name}`,true);await yieldUI()}}inputDuplicates+=r.inputDuplicates||0;inputConflicts+=r.inputConflicts||0;readRows+=r.rows.length;skipped+=r.skip;skippedClosed+=r.skipClosed||0;skippedBilling+=r.skipBilling||0;skippedCycle+=r.skipCycle||0;for(const x of r.closedSamples||[])if(closedSamples.size<5)closedSamples.add(x);errorCount+=r.errorCount??r.errors.length;errs.push(...r.errors);await yieldUI()}fileRows=Array.from(sourceUnique.values());analyzedCycleFilter=cycleFilter;analyzedInputDuplicates=inputDuplicates;analyzedInputConflicts=inputConflicts;imp.disabled=!fileRows.length;baseProgress(100,`Análise concluída · ${nf.format(fileRows.length)} linha(s) únicas prontas`,false);baseStatus(`Análise concluída: ${fileTotal} arquivo(s), ${nf.format(fileRows.length)} linha(s) únicas prontas, ${nf.format(inputDuplicates)} duplicata(s) removida(s) do(s) TXT (${nf.format(inputConflicts)} com conteúdo divergente; prevaleceu a primeira linha), ${nf.format(skipped)} filtrada(s) [fora de DTA CICLO ${cycleFilter}: ${nf.format(skippedCycle)}; PLTFECHADO diferente de NÃO: ${nf.format(skippedClosed)}; sem DTAHORFATURAMENTO: ${nf.format(skippedBilling)}], ${nf.format(errorCount)} erro(s).${closedSamples.size?' Valores PLTFECHADO lidos: '+[...closedSamples].join(', ')+'.':''}${errs.length?' Erros: '+errs.slice(0,20).join(' · '):''}`,errorCount||skipped?'warn':'ok')}catch(e){baseProgress(100,'Falha durante a análise',false);baseStatus('Falha na análise: '+(e.message||e),'err')}finally{analyze.disabled=false}};
+
+function canonicalValue(k,v){if(k==='DTA CICLO')return isoDate(v)||norm(v);if(['NROCARGA','SEQLOTE','SEQPRODUTO','QTDEMBCONTADA','QTDPESOBRUTO'].includes(k))return Number(v)||0;if(k==='CODPRODUTIVO')return normMat(v);return String(v??'')}
+function keyRow(r){return FIELDS.map(k=>canonicalValue(k,r[k])).join('|')}
+function sourceKeyRow(r,minute){return [minute,canonicalValue('NROCARGA',r.NROCARGA),canonicalValue('SEQLOTE',r.SEQLOTE),canonicalValue('SEQPRODUTO',r.SEQPRODUTO),Math.trunc(Number(r.CODPRODUTIVO)||0)].join('|')}
+function queryDeduplicate(list){return list}
 function sameRow(a,b){return FIELDS.every(k=>canonicalValue(k,a[k])===canonicalValue(k,b[k]))}
 function sameParsedRow(a,b){return FIELDS.every(k=>a[k]===b[k])}
-function patchUrl(old){const u=new URL(`${URL_SB}/rest/v1/${TABLE}`);for(const k of ['DTA REAL','DTA CICLO','NROCARGA','SEQLOTE','SEQPRODUTO','CODPRODUTIVO'])u.searchParams.set(k,'eq.'+String(old[k]??''));return u}
+function patchUrl(old){const u=new URL(`${URL_SB}/rest/v1/${TABLE}`);for(const k of ['DTA CICLO','NROCARGA','SEQLOTE','SEQPRODUTO','CODPRODUTIVO'])u.searchParams.set(k,'eq.'+String(old[k]??''));return u}
+
+// Substituição autoritativa do ciclo, usando apenas DTA CICLO no esquema PLT_FECH.
+function cycleVariants(day){return [day,`${day.slice(8,10)}/${day.slice(5,7)}/${day.slice(0,4)}`,String(excelSerial(day))]}
+async function readCycleRows(day){const select='"DTA CICLO",NROCARGA,SEQLOTE,SEQPRODUTO,CODPRODUTIVO,PRODUTIVO,QTDPESOBRUTO,QTDEMBCONTADA';let succeeded=false,errors=[];for(const v of cycleVariants(day)){try{const rows=await readTable(TABLE,select,{'DTA CICLO':'eq.'+v});succeeded=true;const matches=rows.filter(r=>isoDate(r['DTA CICLO'])===day);if(matches.length)return matches}catch(e){errors.push(e.message||String(e))}}if(!succeeded)throw Error('Não foi possível ler o backup do ciclo: '+errors.join(' · '));return []}
+async function deleteCycleRows(day){let ok=0;const errors=[];for(const v of cycleVariants(day)){const u=new URL(`${URL_SB}/rest/v1/${TABLE}`);u.searchParams.set('DTA CICLO','eq.'+v);try{const r=await fetch(u,{method:'DELETE',headers:{...headers(),Prefer:'return=minimal'}});if(!r.ok)throw Error(await apiError(r));ok++}catch(e){errors.push(`${v}: ${e.message||e}`)}}if(!ok)throw Error('Nenhum formato de DTA CICLO foi aceito na exclusão. '+errors.join(' · '))}
+async function insertCycleRows(list){const size=1000;for(let i=0;i<list.length;i+=size){const batch=list.slice(i,i+size),r=await fetch(`${URL_SB}/rest/v1/${TABLE}`,{method:'POST',headers:{...headers(),Prefer:'return=minimal','Content-Type':'application/json'},body:JSON.stringify(batch)});if(!r.ok)throw Error(`Falha ao inserir lote ${Math.floor(i/size)+1}: ${await apiError(r)}`);baseProgress(Math.min(95,20+75*Math.min(1,(i+batch.length)/Math.max(1,list.length))),`Gravando ciclo ${analyzedCycleFilter} · ${nf.format(Math.min(i+batch.length,list.length))}/${nf.format(list.length)} linhas`,true)}}
+$('#importBtn').onclick=async()=>{
+const cycle=analyzedCycleFilter;
+if(!cycle)return baseStatus('Analise os TXT antes de sincronizar o ciclo.','warn');
+if(cycle!==$('#cycleDateFilter').value)return baseStatus('A data do ciclo mudou ou não está associada à análise. Analise os TXT novamente.','warn');
+
+const syncStart=firstDayOfPreviousMonth();
+const syncEnd=hoje();
+const syncPeriods=buildSyncPeriods(syncStart,syncEnd);
+const periodText=syncPeriods.map((p,i)=>`${String(i+1).padStart(2,'0')}. ${br(p.start)} a ${br(p.end)}`).join('\n');
+
+const confirmMessage=
+`ANTES DE CONTINUAR, CONFIRME O DOWNLOAD DAS BASES CORRETAS.\n\n`+
+`A atualização considera o período de ${br(syncStart)} até ${br(syncEnd)}.\n\n`+
+`As bases TXT devem estar divididas nos seguintes períodos de 10 dias:\n\n${periodText}\n\n`+
+`O último período termina exatamente na data de atualização.\n\n`+
+`Será sincronizado somente o ciclo selecionado: ${br(cycle)}.\n\n`+
+`O Supabase será reconciliado com os TXT carregados:\n`+
+`• Novos registros serão inseridos.\n`+
+`• Registros existentes terão somente QTDPESOBRUTO e QTDEMBCONTADA atualizados, quando necessário.\n`+
+`• Registros do ciclo selecionado que não existirem mais nos TXT serão excluídos.\n`+
+`• Registros de outros ciclos não serão alterados.\n\n`+
+`Confirma que baixou todas as bases corretas do período?`;
+
+if(!confirm(confirmMessage)){
+baseStatus('Sincronização cancelada. Nenhum dado foi alterado no Supabase.','warn');
+return;
+}
+
+const b=$('#importBtn'),analyze=$('#analyzeBtn');
+b.disabled=true;analyze.disabled=true;
+let inserted=0,updated=0,same=0,removed=0,ambiguous=0;
+
+try{
+baseProgress(1,'Preparando sincronização do ciclo…',true);
+await yieldUI();
+
+if(!fileRows.length)throw Error('Nenhuma linha válida foi encontrada nos TXT analisados.');
+
+baseProgress(5,'Lendo registros existentes do ciclo no Supabase…',true);
+
+const existingRows=await readCycleRows(cycle);
+
+const existingByKey=new Map();
+for(const row of existingRows){
+const key=syncKey(row);
+if(!existingByKey.has(key))existingByKey.set(key,[]);
+existingByKey.get(key).push(row);
+}
+
+const txtByKey=new Map();
+for(const row of fileRows){
+const key=syncKey(row);
+if(!txtByKey.has(key))txtByKey.set(key,[]);
+txtByKey.get(key).push(row);
+}
+
+const inserts=[],updates=[],keysToDelete=[];
+
+for(const [key,txtRows] of txtByKey.entries()){
+const dbRows=existingByKey.get(key)||[];
+
+if(!dbRows.length){
+inserts.push(txtRows[0]);
+continue;
+}
+
+if(dbRows.length>1){
+ambiguous++;
+continue;
+}
+
+const dbRow=dbRows[0];
+const txtRow=txtRows[0];
+
+if(syncValuesDiffer(dbRow,txtRow)){
+updates.push({old:dbRow,next:txtRow});
+}else{
+same++;
+}
+}
+
+for(const key of existingByKey.keys()){
+if(!txtByKey.has(key))keysToDelete.push(key);
+}
+
+baseProgress(
+15,
+`Preparando sincronização · ${nf.format(inserts.length)} nova(s), ${nf.format(updates.length)} atualização(ões), ${nf.format(keysToDelete.length)} exclusão(ões)`,
+true
+);
+await yieldUI();
+
+await insertSyncRows(inserts);
+inserted=inserts.length;
+
+await updateSyncRows(updates);
+updated=updates.length;
+
+await deleteSyncRows(keysToDelete);
+removed=keysToDelete.length;
+
+baseProgress(100,'Sincronização concluída',false);
+
+baseStatus(
+`Ciclo ${br(cycle)} sincronizado com os TXT carregados.\n\n`+
+`Novos registros inseridos: ${nf.format(inserted)}\n`+
+`Registros atualizados (QTDPESOBRUTO e/ou QTDEMBCONTADA): ${nf.format(updated)}\n`+
+`Registros idênticos mantidos: ${nf.format(same)}\n`+
+`Registros removidos por não existirem mais nos TXT: ${nf.format(removed)}\n`+
+`Chaves duplicadas no Supabase não alteradas: ${nf.format(ambiguous)}\n\n`+
+`Duplicatas removidas dos TXT: ${nf.format(analyzedInputDuplicates)} (${nf.format(analyzedInputConflicts)} com conteúdo divergente; prevaleceu a primeira linha).\n\n`+
+`Nenhum outro ciclo foi alterado.`,
+ambiguous?'warn':'ok'
+);
+
+await loadData();
+
+}catch(e){
+baseProgress(100,'Sincronização interrompida',false);
+baseStatus('Falha na sincronização do ciclo '+br(cycle)+': '+(e.message||e),'err');
+}finally{
+b.disabled=false;analyze.disabled=false;
+}};
+
+function firstDayOfPreviousMonth(){
+const today=hoje();
+const [y,m]=today.split('-').map(Number);
+const previousYear=m===1?y-1:y;
+const previousMonth=m===1?12:m-1;
+return `${previousYear}-${String(previousMonth).padStart(2,'0')}-01`;
+}
+
+function buildSyncPeriods(startIso,endIso){
+const periods=[];
+let cursor=startIso;
+
+while(cursor<=endIso){
+let periodEnd=addIsoDays(cursor,9);
+if(periodEnd>endIso)periodEnd=endIso;
+
+periods.push({start:cursor,end:periodEnd});
+cursor=addIsoDays(periodEnd,1);
+}
+
+return periods;
+}
+
+function syncKey(row){
+return [
+isoDate(row['DTA CICLO'])||norm(row['DTA CICLO']),
+norm(row.NROCARGA),
+norm(row.SEQLOTE),
+norm(row.SEQPRODUTO),
+norm(row.CODPRODUTIVO)
+].join('|');
+}
+
+function syncValuesDiffer(oldRow,newRow){
+return Number(oldRow.QTDPESOBRUTO||0)!==Number(newRow.QTDPESOBRUTO||0)||
+Number(oldRow.QTDEMBCONTADA||0)!==Number(newRow.QTDEMBCONTADA||0);
+}
+
+async function insertSyncRows(rows){
+const batchSize=1000;
+
+for(let i=0;i<rows.length;i+=batchSize){
+const batch=rows.slice(i,i+batchSize);
+const response=await fetch(`${URL_SB}/rest/v1/${TABLE}`,{
+method:'POST',
+headers:{...headers(),'Prefer':'return=minimal','Content-Type':'application/json'},
+body:JSON.stringify(batch)
+});
+
+if(!response.ok)throw Error('Falha ao inserir novos registros: '+await apiError(response));
+
+baseProgress(
+20+Math.min(25,(i+batch.length)/Math.max(1,rows.length)*25),
+`Inserindo novos registros · ${nf.format(Math.min(i+batch.length,rows.length))} / ${nf.format(rows.length)}`,
+true
+);
+
+await yieldUI();
+}
+}
+
+async function updateSyncRows(items){
+const concurrency=8;
+
+for(let i=0;i<items.length;i+=concurrency){
+const group=items.slice(i,i+concurrency);
+
+await Promise.all(group.map(async item=>{
+const response=await fetch(patchUrl(item.old),{
+method:'PATCH',
+headers:{...headers(),'Prefer':'return=representation','Content-Type':'application/json'},
+body:JSON.stringify({
+QTDPESOBRUTO:item.next.QTDPESOBRUTO,
+QTDEMBCONTADA:item.next.QTDEMBCONTADA
+})
+});
+
+if(!response.ok)throw Error('Falha ao atualizar o registro '+item.next.NROCARGA+': '+await apiError(response));
+
+const changed=await response.json();
+if(!Array.isArray(changed)||!changed.length)throw Error('Nenhuma linha foi atualizada para a chave '+syncKey(item.next));
+}));
+
+baseProgress(
+45+Math.min(20,(i+group.length)/Math.max(1,items.length)*20),
+`Atualizando registros alterados · ${nf.format(Math.min(i+group.length,items.length))} / ${nf.format(items.length)}`,
+true
+);
+
+await yieldUI();
+}
+}
+
+async function deleteSyncRows(keys){
+const chunkSize=40;
+
+for(let i=0;i<keys.length;i+=chunkSize){
+const chunk=keys.slice(i,i+chunkSize);
+
+const conditions=chunk.map(key=>{
+const [cycle,load,lote,produto,colaborador]=key.split('|');
+return `and("DTA CICLO".eq.${cycle},NROCARGA.eq.${load},SEQLOTE.eq.${lote},SEQPRODUTO.eq.${produto},CODPRODUTIVO.eq.${colaborador})`;
+}).join(',');
+
+const url=new URL(`${URL_SB}/rest/v1/${TABLE}`);
+url.searchParams.set('or',`(${conditions})`);
+
+const response=await fetch(url,{
+method:'DELETE',
+headers:{...headers(),'Prefer':'return=minimal'}
+});
+
+if(!response.ok)throw Error('Falha ao remover registros desatualizados: '+await apiError(response));
+
+baseProgress(
+65+Math.min(30,(i+chunk.length)/Math.max(1,keys.length)*30),
+`Removendo registros desatualizados · ${nf.format(Math.min(i+chunk.length,keys.length))} / ${nf.format(keys.length)}`,
+true
+);
+
+await yieldUI();
+}
+}
 
 // Helpers for delimited text.
-function csvLine(line,delim){const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'&&q&&line[i+1]==='"'){cur+='"';i++}else if(c==='"')q=!q;else if(c===delim&&!q){out.push(cur);cur=''}else cur+=c}out.push(cur);return out.map(x=>x.trim())}
+function csvLine(line,delim){const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'&&q&&line[i+1]==='"'){cur+='"';i++}else if(c==='"')q=!q;else if(c===delim&&!q){out.push(cur);cur=''}else cur+=c}out.push(cur);return out}
 $('#themeBtn').onclick=()=>{const d=document.documentElement,light=d.dataset.theme!=='light';d.dataset.theme=light?'light':'dark';$('#themeBtn').textContent=light?'🌙 Modo escuro':'☀️ Modo claro'};
 if(AUTH.ok){loadData()}else status('Aguardando login');
 })();</script></body></html>
